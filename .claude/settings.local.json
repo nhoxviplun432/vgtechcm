@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir \"F:\\\\laragon\\\\www\\\\vgtechmd\\\\public\")",
+      "Bash(dir /s \"F:\\\\laragon\\\\www\\\\vgtechmd\\\\resources\\\\soft\")",
+      "Bash(npm run:*)"
+    ]
+  }
+}
