@@ -1,6 +1,7 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useMemo } from "react";
+import { useRouter } from "next/navigation";
 import { ErrorMsg } from "@/components/pakage/ErrorMsg";
 
 /* ------------------------------------------------------------------ */
@@ -54,6 +55,136 @@ function parseISO(iso: string): { y: number; m: number; d: number } | null {
   if (!iso) return null;
   const [y, m, d] = iso.split("-").map(Number);
   return { y, m: m - 1, d };
+}
+
+/* ------------------------------------------------------------------ */
+/* TimePicker                                                           */
+/* ------------------------------------------------------------------ */
+function TimePicker({
+  value,
+  hasError,
+  onChange,
+  onBlur,
+}: {
+  value: string;
+  hasError: boolean;
+  onChange: (time: string) => void;
+  onBlur?: () => void;
+}) {
+  const [open, setOpen] = useState(false);
+  const wrapperRef = useRef<HTMLDivElement>(null);
+  const hourRef = useRef<HTMLDivElement>(null);
+  const minuteRef = useRef<HTMLDivElement>(null);
+
+  const parsed = value.match(/^(\d{2}):(\d{2})$/);
+  const selHour = parsed ? parseInt(parsed[1]) : 0;
+  const selMin = parsed ? parseInt(parsed[2]) : 0;
+
+  useEffect(() => {
+    function onOutside(e: MouseEvent) {
+      if (wrapperRef.current && !wrapperRef.current.contains(e.target as Node)) {
+        if (open) { setOpen(false); onBlur?.(); }
+      }
+    }
+    document.addEventListener("mousedown", onOutside);
+    return () => document.removeEventListener("mousedown", onOutside);
+  }, [open, onBlur]);
+
+  useEffect(() => {
+    if (open) {
+      setTimeout(() => {
+        hourRef.current?.querySelector(`[data-selected="true"]`)?.scrollIntoView({ block: "center" });
+        minuteRef.current?.querySelector(`[data-selected="true"]`)?.scrollIntoView({ block: "center" });
+      }, 50);
+    }
+  }, [open]);
+
+  function pick(h: number, m: number) {
+    onChange(`${String(h).padStart(2,"0")}:${String(m).padStart(2,"0")}`);
+  }
+
+  const hours = Array.from({ length: 24 }, (_, i) => i);
+  const minutes = Array.from({ length: 60 }, (_, i) => i);
+
+  const borderClass = hasError
+    ? "border-red-400/60"
+    : "border-white/10 focus:border-fuchsia-400/60";
+
+  return (
+    <div ref={wrapperRef} className="relative">
+      <button
+        type="button"
+        onClick={() => setOpen(v => !v)}
+        className={`flex w-full h-11 items-center justify-between rounded-xl border bg-white/5
+          px-4 text-left transition-colors focus:outline-none focus:ring-2
+          focus:ring-fuchsia-400/20 ${borderClass}`}
+      >
+        <span className={value ? "text-sm text-white" : "text-sm text-slate-500"}>
+          {value || "HH:MM"}
+        </span>
+        <svg className="h-4 w-4 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      </button>
+
+      {open && (
+        <div className="absolute left-0 top-full z-50 mt-1 w-44 rounded-2xl border border-white/10
+          bg-slate-900/95 backdrop-blur-md shadow-2xl overflow-hidden">
+          <div className="flex items-center justify-between px-4 py-2.5 border-b border-white/10">
+            <span className="text-xs font-semibold text-slate-400 uppercase tracking-wide">Giờ</span>
+            <span className="text-xs font-semibold text-slate-400 uppercase tracking-wide">Phút</span>
+          </div>
+          <div className="flex">
+            {/* Hours column */}
+            <div
+              ref={hourRef}
+              className="flex-1 max-h-48 overflow-y-auto border-r border-white/10
+                [&::-webkit-scrollbar]:w-1 [&::-webkit-scrollbar-track]:bg-transparent
+                [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-white/20"
+            >
+              {hours.map(h => (
+                <button
+                  key={h}
+                  type="button"
+                  data-selected={h === selHour ? "true" : "false"}
+                  onClick={() => pick(h, selMin)}
+                  className={`w-full py-1.5 text-sm text-center transition-all
+                    ${h === selHour
+                      ? "bg-gradient-to-r from-fuchsia-500 to-indigo-500 text-white font-semibold"
+                      : "text-slate-300 hover:bg-white/10"}`}
+                >
+                  {String(h).padStart(2,"0")}
+                </button>
+              ))}
+            </div>
+            {/* Minutes column */}
+            <div
+              ref={minuteRef}
+              className="flex-1 max-h-48 overflow-y-auto
+                [&::-webkit-scrollbar]:w-1 [&::-webkit-scrollbar-track]:bg-transparent
+                [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-white/20"
+            >
+              {minutes.map(m => (
+                <button
+                  key={m}
+                  type="button"
+                  data-selected={m === selMin ? "true" : "false"}
+                  onClick={() => { pick(selHour, m); setOpen(false); onBlur?.(); }}
+                  className={`w-full py-1.5 text-sm text-center transition-all
+                    ${m === selMin
+                      ? "bg-gradient-to-r from-fuchsia-500 to-indigo-500 text-white font-semibold"
+                      : "text-slate-300 hover:bg-white/10"}`}
+                >
+                  {String(m).padStart(2,"0")}
+                </button>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
+  );
 }
 
 /* ------------------------------------------------------------------ */
@@ -178,29 +309,29 @@ function DatePicker({
           {mode === "day" && (
             <>
               {/* Header */}
-<div className="flex items-center justify-between px-4 py-3 border-b border-white/10">
-  <button type="button" onClick={prevMonth}
-    className="flex h-7 w-7 items-center justify-center rounded-lg hover:bg-white/10 transition-colors text-slate-400 hover:text-white">
-    <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-    </svg>
-  </button>
+            <div className="flex items-center justify-between px-4 py-3 border-b border-white/10">
+            <button type="button" onClick={prevMonth}
+                className="flex h-7 w-7 items-center justify-center rounded-lg hover:bg-white/10 transition-colors text-slate-400 hover:text-white">
+                <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                </svg>
+            </button>
 
-  <div className="flex items-center gap-1">
-    <button
-      type="button"
-      onClick={() => setMode("month")}
-      className="rounded-lg px-2 py-1 text-sm font-semibold text-white hover:bg-white/10 transition-colors"
-    >
-      {MONTHS_VI[viewMonth]}
-    </button>
-    <button
-      type="button"
-      onClick={() => setMode("year")}
-      className="rounded-lg px-1 py-1 text-sm font-bold text-fuchsia-400 hover:text-fuchsia-300 hover:bg-white/10 transition-colors"
-    >
-      {viewYear}
-    </button>
+            <div className="flex items-center gap-1">
+                <button
+                type="button"
+                onClick={() => setMode("month")}
+                className="rounded-lg px-2 py-1 text-sm font-semibold text-white hover:bg-white/10 transition-colors"
+                >
+                {MONTHS_VI[viewMonth]}
+                </button>
+                <button
+                type="button"
+                onClick={() => setMode("year")}
+                className="rounded-lg px-1 py-1 text-sm font-bold text-fuchsia-400 hover:text-fuchsia-300 hover:bg-white/10 transition-colors"
+                >
+                {viewYear}
+                </button>
   </div>
 
   <button type="button" onClick={nextMonth}
@@ -475,23 +606,18 @@ export default function HumanDesignForm() {
     countryName: "",
   });
 
-  const [errors, setErrors] = useState<FieldErrors>({});
   const [touched, setTouched] = useState<Partial<Record<keyof FormData, boolean>>>({});
   const [submitState, setSubmitState] = useState<SubmitState>({ loading: false, success: false, error: null });
+  const router = useRouter();
 
-    useEffect(() => {
-        const newErrors = validateForm(formData);
-        const filtered: FieldErrors = {};
-
-        // Chỉ giữ lại lỗi của các field đã được touch
-        (Object.keys(newErrors) as (keyof FormData)[]).forEach(k => {
-            if (touched[k]) {
-            filtered[k] = newErrors[k];
-            }
-        });
-
-        setErrors(filtered);
-    }, [formData, touched]);
+  const errors = useMemo<FieldErrors>(() => {
+    const allErrors = validateForm(formData);
+    const filtered: FieldErrors = {};
+    (Object.keys(allErrors) as (keyof FormData)[]).forEach(k => {
+      if (touched[k]) filtered[k] = allErrors[k];
+    });
+    return filtered;
+  }, [formData, touched]);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setFormData(prev => ({ ...prev, [e.target.name]: e.target.value }));
@@ -507,11 +633,22 @@ export default function HumanDesignForm() {
     const allTouched = { fullName: true, birthDate: true, birthTime: true, birthPlace: true };
     setTouched(allTouched);
     const validationErrors = validateForm(formData);
-    if (Object.keys(validationErrors).length > 0) { setErrors(validationErrors); return; }
+    if (Object.keys(validationErrors).length > 0) return;
     setSubmitState({ loading: true, success: false, error: null });
     try {
-      await new Promise(r => setTimeout(r, 1000));
-      setSubmitState({ loading: false, success: true, error: null });
+      const date = `${formData.birthDate} ${formData.birthTime || "00:00"}:00`;
+      const timezone = formData.timeZone;
+      const res = await fetch(
+        `${process.env.NEXT_PUBLIC_API_URL}/hd?date=${encodeURIComponent(date)}&timezone=${encodeURIComponent(timezone)}`
+      );
+      const json = await res.json();
+      if (!res.ok || !json.Properties) {
+        router.push("/hd/result?error=1");
+        return;
+      }
+      sessionStorage.setItem("hd_result", JSON.stringify(json));
+      sessionStorage.setItem("hd_name", formData.fullName);
+      router.push("/hd/result");
     } catch (err) {
       setSubmitState({ loading: false, success: false, error: err instanceof Error ? err.message : "Có lỗi xảy ra." });
     }
@@ -539,7 +676,7 @@ export default function HumanDesignForm() {
           onClick={() => {
             setSubmitState({ loading: false, success: false, error: null });
             setFormData({ fullName: "", birthDate: "", birthTime: "00:00", birthPlace: "", birthPlaceTimezone: "", timeZone: "Asia/Ho_Chi_Minh", countryName: "" });
-            setErrors({}); setTouched({});
+            setTouched({});
           }}
           className="mt-4 text-sm text-fuchsia-300 hover:text-fuchsia-200 underline"
         >
@@ -593,10 +730,11 @@ export default function HumanDesignForm() {
             Giờ sinh
             <span className="ml-1 text-xs text-slate-500">(không bắt buộc)</span>
           </label>
-          <input
-            id="birthTime" name="birthTime" type="time"
-            value={formData.birthTime} onChange={handleChange} onBlur={handleBlur}
-            className={`${inputClass("birthTime")} [color-scheme:dark]`}
+          <TimePicker
+            value={formData.birthTime}
+            hasError={!!errors.birthTime}
+            onChange={t => { setFormData(prev => ({ ...prev, birthTime: t })); setTouched(prev => ({ ...prev, birthTime: true })); }}
+            onBlur={() => setTouched(prev => ({ ...prev, birthTime: true }))}
           />
           <ErrorMsg msg={errors.birthTime} />
         </div>

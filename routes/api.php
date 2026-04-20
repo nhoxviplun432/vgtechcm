@@ -3,9 +3,11 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\Api\AuthController;
+use App\Http\Controllers\Api\HumanDesignController;
 use App\Http\Controllers\Api\LocationController;
 
 Route::get('/locations', [LocationController::class, 'search']);
+Route::get('/hd', [HumanDesignController::class, 'lookup']);
 
 // Auth
 Route::post('/auth/register', [AuthController::class, 'register']);
