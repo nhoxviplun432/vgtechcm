@@ -58,7 +58,7 @@ function parseISO(iso: string): { y: number; m: number; d: number } | null {
 }
 
 /* ------------------------------------------------------------------ */
-/* TimePicker                                                           */
+/* TimePicker — type numbers directly (HH:MM) or use scroll popup      */
 /* ------------------------------------------------------------------ */
 function TimePicker({
   value,
@@ -75,15 +75,22 @@ function TimePicker({
   const wrapperRef = useRef<HTMLDivElement>(null);
   const hourRef = useRef<HTMLDivElement>(null);
   const minuteRef = useRef<HTMLDivElement>(null);
+  // "h" = editing hour first digit, "H" = editing hour second digit, "m" = minute first, "M" = minute second, null = idle
+  const [seg, setSeg] = useState<"h" | "H" | "m" | "M" | null>(null);
+  const [buf, setBuf] = useState("");
 
   const parsed = value.match(/^(\d{2}):(\d{2})$/);
-  const selHour = parsed ? parseInt(parsed[1]) : 0;
-  const selMin = parsed ? parseInt(parsed[2]) : 0;
+  const selHour = parsed ? parseInt(parsed[1]) : -1;
+  const selMin = parsed ? parseInt(parsed[2]) : -1;
+
+  const displayHH = selHour >= 0 ? String(selHour).padStart(2, "0") : "--";
+  const displayMM = selMin >= 0 ? String(selMin).padStart(2, "0") : "--";
 
   useEffect(() => {
     function onOutside(e: MouseEvent) {
       if (wrapperRef.current && !wrapperRef.current.contains(e.target as Node)) {
         if (open) { setOpen(false); onBlur?.(); }
+        setSeg(null); setBuf("");
       }
     }
     document.addEventListener("mousedown", onOutside);
@@ -99,8 +106,69 @@ function TimePicker({
     }
   }, [open]);
 
-  function pick(h: number, m: number) {
-    onChange(`${String(h).padStart(2,"0")}:${String(m).padStart(2,"0")}`);
+  function emit(h: number, m: number) {
+    if (h >= 0 && m >= 0)
+      onChange(`${String(h).padStart(2, "0")}:${String(m).padStart(2, "0")}`);
+  }
+
+  function pick(h: number, m: number) { emit(h, m); }
+
+  // Keyboard entry: digit keys advance through HH then MM
+  function handleKey(e: React.KeyboardEvent) {
+    if (e.key === "Tab" || e.key === "Enter") { setSeg(null); setBuf(""); return; }
+    if (e.key === "Backspace") {
+      onChange("");
+      setSeg("h"); setBuf(""); return;
+    }
+    if (!/^\d$/.test(e.key)) return;
+    e.preventDefault();
+    const d = e.key;
+    const curH = selHour >= 0 ? selHour : 0;
+    const curM = selMin >= 0 ? selMin : 0;
+
+    if (seg === null || seg === "h") {
+      // first digit of hour
+      const n = parseInt(d);
+      if (n <= 2) {
+        setBuf(d); setSeg("H");
+        emit(n, curM);
+      } else {
+        // digit > 2 → treat as 0X and jump to minutes
+        const h = parseInt("0" + d);
+        emit(h, curM);
+        setBuf(""); setSeg("m");
+      }
+    } else if (seg === "H") {
+      const h = parseInt(buf + d);
+      if (h > 23) {
+        // overflow: start new hour with this digit
+        const newH = parseInt(d);
+        emit(newH <= 2 ? newH : 0, curM);
+        setBuf(newH <= 2 ? d : "0"); setSeg(newH <= 2 ? "H" : "m");
+      } else {
+        emit(h, curM);
+        setBuf(""); setSeg("m");
+      }
+    } else if (seg === "m") {
+      const n = parseInt(d);
+      if (n <= 5) {
+        setBuf(d); setSeg("M");
+        emit(curH, n);
+      } else {
+        emit(curH, parseInt("0" + d));
+        setBuf(""); setSeg(null); onBlur?.();
+      }
+    } else if (seg === "M") {
+      const m = parseInt(buf + d);
+      if (m > 59) {
+        const nm = parseInt(d);
+        emit(curH, nm <= 5 ? nm : 0);
+        setBuf(nm <= 5 ? d : "0"); setSeg(nm <= 5 ? "M" : null);
+      } else {
+        emit(curH, m);
+        setBuf(""); setSeg(null); onBlur?.();
+      }
+    }
   }
 
   const hours = Array.from({ length: 24 }, (_, i) => i);
@@ -108,25 +176,51 @@ function TimePicker({
 
   const borderClass = hasError
     ? "border-red-400/60"
-    : "border-white/10 focus:border-fuchsia-400/60";
+    : "border-white/10 focus-within:border-fuchsia-400/60";
 
   return (
     <div ref={wrapperRef} className="relative">
-      <button
-        type="button"
-        onClick={() => setOpen(v => !v)}
+      {/* Input row */}
+      <div
         className={`flex w-full h-11 items-center justify-between rounded-xl border bg-white/5
-          px-4 text-left transition-colors focus:outline-none focus:ring-2
-          focus:ring-fuchsia-400/20 ${borderClass}`}
+          px-4 transition-colors focus-within:ring-2 focus-within:ring-fuchsia-400/20 ${borderClass}`}
       >
-        <span className={value ? "text-sm text-white" : "text-sm text-slate-500"}>
-          {value || "HH:MM"}
+        {/* Invisible but focusable input captures keystrokes */}
+        <input
+          type="text"
+          inputMode="numeric"
+          readOnly
+          onFocus={() => { if (!seg) setSeg("h"); }}
+          onKeyDown={handleKey}
+          onBlur={() => { setSeg(null); setBuf(""); onBlur?.(); }}
+          aria-label="Giờ sinh"
+          className="absolute inset-y-0 left-0 right-10 opacity-0 cursor-text"
+        />
+        <span
+          className="text-sm select-none pointer-events-none"
+          style={{ fontVariantNumeric: "tabular-nums" }}
+        >
+          <span className={seg === "h" || seg === "H" ? "text-fuchsia-300 font-bold" : (selHour >= 0 ? "text-white" : "text-slate-500")}>
+            {seg === "H" ? buf.padEnd(2, "_") : displayHH}
+          </span>
+          <span className="text-slate-500">:</span>
+          <span className={seg === "m" || seg === "M" ? "text-fuchsia-300 font-bold" : (selMin >= 0 ? "text-white" : "text-slate-500")}>
+            {seg === "M" ? buf.padEnd(2, "_") : displayMM}
+          </span>
         </span>
-        <svg className="h-4 w-4 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
-            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-        </svg>
-      </button>
+        <button
+          type="button"
+          tabIndex={-1}
+          onClick={() => setOpen(v => !v)}
+          className="ml-2 shrink-0 text-slate-400 hover:text-slate-200 transition-colors"
+          aria-label="Mở bộ chọn giờ"
+        >
+          <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+              d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        </button>
+      </div>
 
       {open && (
         <div className="absolute left-0 top-full z-50 mt-1 w-44 rounded-2xl border border-white/10
@@ -136,7 +230,6 @@ function TimePicker({
             <span className="text-xs font-semibold text-slate-400 uppercase tracking-wide">Phút</span>
           </div>
           <div className="flex">
-            {/* Hours column */}
             <div
               ref={hourRef}
               className="flex-1 max-h-48 overflow-y-auto border-r border-white/10
@@ -148,17 +241,16 @@ function TimePicker({
                   key={h}
                   type="button"
                   data-selected={h === selHour ? "true" : "false"}
-                  onClick={() => pick(h, selMin)}
+                  onClick={() => pick(h, selMin >= 0 ? selMin : 0)}
                   className={`w-full py-1.5 text-sm text-center transition-all
                     ${h === selHour
                       ? "bg-gradient-to-r from-fuchsia-500 to-indigo-500 text-white font-semibold"
                       : "text-slate-300 hover:bg-white/10"}`}
                 >
-                  {String(h).padStart(2,"0")}
+                  {String(h).padStart(2, "0")}
                 </button>
               ))}
             </div>
-            {/* Minutes column */}
             <div
               ref={minuteRef}
               className="flex-1 max-h-48 overflow-y-auto
@@ -170,13 +262,13 @@ function TimePicker({
                   key={m}
                   type="button"
                   data-selected={m === selMin ? "true" : "false"}
-                  onClick={() => { pick(selHour, m); setOpen(false); onBlur?.(); }}
+                  onClick={() => { pick(selHour >= 0 ? selHour : 0, m); setOpen(false); onBlur?.(); }}
                   className={`w-full py-1.5 text-sm text-center transition-all
                     ${m === selMin
                       ? "bg-gradient-to-r from-fuchsia-500 to-indigo-500 text-white font-semibold"
                       : "text-slate-300 hover:bg-white/10"}`}
                 >
-                  {String(m).padStart(2,"0")}
+                  {String(m).padStart(2, "0")}
                 </button>
               ))}
             </div>
@@ -188,7 +280,7 @@ function TimePicker({
 }
 
 /* ------------------------------------------------------------------ */
-/* DatePicker                                                           */
+/* DatePicker — type numbers directly (DD/MM/YYYY) or calendar popup   */
 /* ------------------------------------------------------------------ */
 function DatePicker({
   value,
@@ -208,14 +300,20 @@ function DatePicker({
   const [viewYear, setViewYear] = useState(parsed?.y ?? today.getFullYear() - 20);
   const [viewMonth, setViewMonth] = useState(parsed?.m ?? today.getMonth());
   const [mode, setMode] = useState<"day" | "month" | "year">("day");
+  // typing segments: "d1" d2 → auto-advance to "m1" m2 → "y1" y2 y3 y4
+  type DSeg = "d1" | "d2" | "m1" | "m2" | "y1" | "y2" | "y3" | "y4" | null;
+  const [dseg, setDseg] = useState<DSeg>(null);
+  const [dbuf, setDbuf] = useState("");
+  // partial typed values while editing
+  const [typedD, setTypedD] = useState<number | null>(null);
+  const [typedM, setTypedM] = useState<number | null>(null);
+  const [typedY, setTypedY] = useState<string>("");
 
   const wrapperRef = useRef<HTMLDivElement>(null);
   const openRef = useRef(false);
 
-  // Giữ openRef đồng bộ với state open
   useEffect(() => { openRef.current = open; }, [open]);
 
-  // Sync view khi value thay đổi từ ngoài
   useEffect(() => {
     if (parsed) { setViewYear(parsed.y); setViewMonth(parsed.m); }
   // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -224,16 +322,100 @@ function DatePicker({
   useEffect(() => {
     function onOutside(e: MouseEvent) {
       if (wrapperRef.current && !wrapperRef.current.contains(e.target as Node)) {
-        // Chỉ mark touched khi popup đang mở — tránh trigger lỗi khi chưa tương tác
-        if (openRef.current) {
-          setOpen(false);
-          onBlur?.();
-        }
+        if (openRef.current) { setOpen(false); onBlur?.(); }
+        resetTyping();
       }
     }
     document.addEventListener("mousedown", onOutside);
     return () => document.removeEventListener("mousedown", onOutside);
   }, [onBlur]);
+
+  function resetTyping() { setDseg(null); setDbuf(""); setTypedD(null); setTypedM(null); setTypedY(""); }
+
+  function emitIfComplete(d: number | null, m: number | null, yStr: string) {
+    const y = parseInt(yStr);
+    if (d && m && yStr.length === 4 && !isNaN(y)) {
+      const iso = `${y}-${String(m).padStart(2, "0")}-${String(d).padStart(2, "0")}`;
+      const dt = new Date(iso);
+      if (!isNaN(dt.getTime())) {
+        onChange(iso);
+        setViewYear(y); setViewMonth(m - 1);
+        onBlur?.();
+      }
+    }
+  }
+
+  function handleDateKey(e: React.KeyboardEvent) {
+    if (e.key === "Tab" || e.key === "Enter") { resetTyping(); return; }
+    if (e.key === "Backspace") { onChange(""); resetTyping(); return; }
+    if (!/^\d$/.test(e.key)) return;
+    e.preventDefault();
+    const n = parseInt(e.key);
+
+    if (dseg === null || dseg === "d1") {
+      if (n >= 4) {
+        // single-digit day (0x)
+        const d = parseInt("0" + n);
+        setTypedD(d); setDbuf(""); setDseg("m1");
+        emitIfComplete(d, typedM, typedY);
+      } else {
+        setDbuf(String(n)); setTypedD(n); setDseg("d2");
+      }
+    } else if (dseg === "d2") {
+      const d = parseInt(dbuf + n);
+      if (d === 0 || d > 31) {
+        // invalid, restart day
+        setDbuf(String(n)); setTypedD(n); setDseg(n >= 4 ? "m1" : "d2");
+        if (n >= 4) emitIfComplete(parseInt("0" + n), typedM, typedY);
+      } else {
+        setTypedD(d); setDbuf(""); setDseg("m1");
+        emitIfComplete(d, typedM, typedY);
+      }
+    } else if (dseg === "m1") {
+      if (n >= 2) {
+        const m = parseInt("0" + n);
+        setTypedM(m); setDbuf(""); setDseg("y1"); setTypedY("");
+        emitIfComplete(typedD, m, typedY);
+      } else {
+        setDbuf(String(n)); setTypedM(n); setDseg("m2");
+      }
+    } else if (dseg === "m2") {
+      const m = parseInt(dbuf + n);
+      if (m === 0 || m > 12) {
+        setDbuf(String(n)); setTypedM(n >= 2 ? parseInt("0" + n) : n); setDseg(n >= 2 ? "y1" : "m2");
+        if (n >= 2) { setTypedY(""); emitIfComplete(typedD, parseInt("0" + n), typedY); }
+      } else {
+        setTypedM(m); setDbuf(""); setDseg("y1"); setTypedY("");
+        emitIfComplete(typedD, m, typedY);
+      }
+    } else if (dseg === "y1") {
+      setTypedY(String(n)); setDseg("y2");
+    } else if (dseg === "y2") {
+      setTypedY(prev => prev + n); setDseg("y3");
+    } else if (dseg === "y3") {
+      setTypedY(prev => prev + n); setDseg("y4");
+    } else if (dseg === "y4") {
+      const y = typedY + n;
+      setTypedY(y);
+      emitIfComplete(typedD, typedM, y);
+      setDseg(null); setDbuf("");
+    }
+  }
+
+  // Display values
+  const dispD = dseg === "d2" ? dbuf.padEnd(2, "_")
+    : typedD !== null ? String(typedD).padStart(2, "0")
+    : parsed ? String(parsed.d).padStart(2, "0") : "--";
+  const dispM = dseg === "m2" ? dbuf.padEnd(2, "_")
+    : typedM !== null ? String(typedM).padStart(2, "0")
+    : parsed ? String(parsed.m + 1).padStart(2, "0") : "--";
+  const dispY = (dseg === "y1" || dseg === "y2" || dseg === "y3" || dseg === "y4") ? typedY.padEnd(4, "_")
+    : parsed ? String(parsed.y) : "----";
+
+  const isSeg = (s: DSeg[]) => s.includes(dseg);
+  const dayActive = isSeg(["d1", "d2"]);
+  const monActive = isSeg(["m1", "m2"]);
+  const yearActive = isSeg(["y1", "y2", "y3", "y4"]);
 
   function selectDay(d: number) {
     onChange(toISO(viewYear, viewMonth, d));
@@ -267,13 +449,9 @@ function DatePicker({
   const isFuture = (d: number) =>
     new Date(toISO(viewYear, viewMonth, d)) > today;
 
-  const displayValue = parsed
-    ? `${String(parsed.d).padStart(2,"0")}/${String(parsed.m + 1).padStart(2,"0")}/${parsed.y}`
-    : "";
-
   const borderClass = hasError
     ? "border-red-400/60"
-    : "border-white/10 focus:border-fuchsia-400/60";
+    : "border-white/10 focus-within:border-fuchsia-400/60";
 
   /* Year range: 1900 → năm hiện tại */
   const yearRange = Array.from(
@@ -283,22 +461,47 @@ function DatePicker({
 
   return (
     <div ref={wrapperRef} className="relative">
-      {/* Trigger */}
-      <button
-        type="button"
-        onClick={() => { setOpen(v => !v); setMode("day"); }}
+      {/* Typed input trigger */}
+      <div
         className={`flex w-full h-11 items-center justify-between rounded-xl border bg-white/5
-          px-4 text-left transition-colors focus:outline-none focus:ring-2
-          focus:ring-fuchsia-400/20 ${borderClass}`}
+          px-4 transition-colors focus-within:ring-2 focus-within:ring-fuchsia-400/20 ${borderClass}`}
       >
-        <span className={displayValue ? "text-sm text-white" : "text-sm text-slate-500"}>
-          {displayValue || "DD/MM/YYYY"}
+        <input
+          type="text"
+          inputMode="numeric"
+          readOnly
+          onFocus={() => { if (!dseg) setDseg("d1"); }}
+          onKeyDown={handleDateKey}
+          onBlur={() => { resetTyping(); onBlur?.(); }}
+          aria-label="Ngày sinh"
+          className="absolute inset-y-0 left-0 right-10 opacity-0 cursor-text"
+        />
+        <span className="text-sm select-none pointer-events-none" style={{ fontVariantNumeric: "tabular-nums" }}>
+          <span className={dayActive ? "text-fuchsia-300 font-bold" : (parsed || typedD ? "text-white" : "text-slate-500")}>
+            {dispD}
+          </span>
+          <span className="text-slate-500">/</span>
+          <span className={monActive ? "text-fuchsia-300 font-bold" : (parsed || typedM ? "text-white" : "text-slate-500")}>
+            {dispM}
+          </span>
+          <span className="text-slate-500">/</span>
+          <span className={yearActive ? "text-fuchsia-300 font-bold" : (parsed ? "text-white" : "text-slate-500")}>
+            {dispY}
+          </span>
         </span>
-        <svg className="h-4 w-4 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
-            d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-        </svg>
-      </button>
+        <button
+          type="button"
+          tabIndex={-1}
+          onClick={() => { setOpen(v => !v); setMode("day"); }}
+          className="ml-2 shrink-0 text-slate-400 hover:text-slate-200 transition-colors"
+          aria-label="Mở lịch"
+        >
+          <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+              d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+          </svg>
+        </button>
+      </div>
 
       {/* Popup */}
       {open && (
@@ -332,16 +535,16 @@ function DatePicker({
                 >
                 {viewYear}
                 </button>
-  </div>
+            </div>
 
-  <button type="button" onClick={nextMonth}
-    disabled={viewYear === today.getFullYear() && viewMonth >= today.getMonth()}
-    className="flex h-7 w-7 items-center justify-center rounded-lg hover:bg-white/10 transition-colors text-slate-400 hover:text-white disabled:opacity-30 disabled:cursor-not-allowed">
-    <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-    </svg>
-  </button>
-</div>
+                <button type="button" onClick={nextMonth}
+                    disabled={viewYear === today.getFullYear() && viewMonth >= today.getMonth()}
+                    className="flex h-7 w-7 items-center justify-center rounded-lg hover:bg-white/10 transition-colors text-slate-400 hover:text-white disabled:opacity-30 disabled:cursor-not-allowed">
+                    <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                </button>
+            </div>
 
               {/* Day labels */}
               <div className="grid grid-cols-7 px-3 pt-2">
@@ -792,8 +995,8 @@ export default function HumanDesignForm() {
         )}
       </button>
 
-      <p className="text-center text-xs text-slate-500">
-        Toàn bộ thông tin của bạn sẽ được bảo mật.
+      <p className="text-left text-xs text-slate-500">
+        *Thông tin của bạn luôn được bảo mật.
       </p>
     </form>
   );

@@ -1,0 +1,1928 @@
+{
+  "Type": {
+    "id": "ID2_01",
+    "nameEN": "Type Pair",
+    "nameVN": "Loại nhân dạng",
+    "values": {
+      "Generator | Generator": {
+        "vn": "Vận hành | Vận hành",
+        "subId": "ID2_01.001"
+      },
+      "Generator | Manifesting Generator": {
+        "vn": "Vận hành | Khởi xướng vận hành",
+        "subId": "ID2_01.002"
+      },
+      "Generator | Projector": {
+        "vn": "Vận hành | Khai vấn",
+        "subId": "ID2_01.003"
+      },
+      "Generator | Manifestor": {
+        "vn": "Vận hành | Khởi xướng",
+        "subId": "ID2_01.004"
+      },
+      "Generator | Reflector": {
+        "vn": "Vận hành | Phản chiếu",
+        "subId": "ID2_01.005"
+      },
+      "Manifesting Generator | Generator": {
+        "vn": "Khởi xướng vận hành | Vận hành",
+        "subId": "ID2_01.006"
+      },
+      "Manifesting Generator | Manifesting Generator": {
+        "vn": "Khởi xướng vận hành | Khởi xướng vận hành",
+        "subId": "ID2_01.007"
+      },
+      "Manifesting Generator | Projector": {
+        "vn": "Khởi xướng vận hành | Khai vấn",
+        "subId": "ID2_01.008"
+      },
+      "Manifesting Generator | Manifestor": {
+        "vn": "Khởi xướng vận hành | Khởi xướng",
+        "subId": "ID2_01.009"
+      },
+      "Manifesting Generator | Reflector": {
+        "vn": "Khởi xướng vận hành | Phản chiếu",
+        "subId": "ID2_01.010"
+      },
+      "Projector | Generator": {
+        "vn": "Khai vấn | Vận hành",
+        "subId": "ID2_01.011"
+      },
+      "Projector | Manifesting Generator": {
+        "vn": "Khai vấn | Khởi xướng vận hành",
+        "subId": "ID2_01.012"
+      },
+      "Projector | Projector": {
+        "vn": "Khai vấn | Khai vấn",
+        "subId": "ID2_01.013"
+      },
+      "Projector | Manifestor": {
+        "vn": "Khai vấn | Khởi xướng",
+        "subId": "ID2_01.014"
+      },
+      "Projector | Reflector": {
+        "vn": "Khai vấn | Phản chiếu",
+        "subId": "ID2_01.015"
+      },
+      "Manifestor | Generator": {
+        "vn": "Khởi xướng | Vận hành",
+        "subId": "ID2_01.016"
+      },
+      "Manifestor | Manifesting Generator": {
+        "vn": "Khởi xướng | Khởi xướng vận hành",
+        "subId": "ID2_01.017"
+      },
+      "Manifestor | Projector": {
+        "vn": "Khởi xướng | Khai vấn",
+        "subId": "ID2_01.018"
+      },
+      "Manifestor | Manifestor": {
+        "vn": "Khởi xướng | Khởi xướng",
+        "subId": "ID2_01.019"
+      },
+      "Manifestor | Reflector": {
+        "vn": "Khởi xướng | Phản chiếu",
+        "subId": "ID2_01.020"
+      },
+      "Reflector | Generator": {
+        "vn": "Phản chiếu | Vận hành",
+        "subId": "ID2_01.021"
+      },
+      "Reflector | Manifesting Generator": {
+        "vn": "Phản chiếu | Khởi xướng vận hành",
+        "subId": "ID2_01.022"
+      },
+      "Reflector | Projector": {
+        "vn": "Phản chiếu | Khai vấn",
+        "subId": "ID2_01.023"
+      },
+      "Reflector | Manifestor": {
+        "vn": "Phản chiếu | Khởi xướng",
+        "subId": "ID2_01.024"
+      },
+      "Reflector | Reflector": {
+        "vn": "Phản chiếu | Phản chiếu",
+        "subId": "ID2_01.025"
+      }
+    }
+  },
+  "Strategy": {
+    "id": "ID2_02",
+    "nameEN": "Strategy Pair",
+    "nameVN": "Chiến lược",
+    "values": {
+      "To Respond | To Respond": {
+        "vn": "Chờ phản hồi | Chờ phản hồi",
+        "subId": "ID2_02.001"
+      },
+      "To Respond | To Inform": {
+        "vn": "Chờ phản hồi | Thông báo",
+        "subId": "ID2_02.002"
+      },
+      "To Respond | Wait for the Invitation": {
+        "vn": "Chờ phản hồi | Chờ lời mời",
+        "subId": "ID2_02.003"
+      },
+      "To Respond | Wait a Lunar Cycle": {
+        "vn": "Chờ phản hồi | Chờ chu kỳ",
+        "subId": "ID2_02.004"
+      },
+      "To Inform | To Respond": {
+        "vn": "Thông báo | Chờ phản hồi",
+        "subId": "ID2_02.005"
+      },
+      "To Inform | To Inform": {
+        "vn": "Thông báo | Thông báo",
+        "subId": "ID2_02.006"
+      },
+      "To Inform | Wait for the Invitation": {
+        "vn": "Thông báo | Chờ lời mời",
+        "subId": "ID2_02.007"
+      },
+      "To Inform | Wait a Lunar Cycle": {
+        "vn": "Thông báo | Chờ chu kỳ",
+        "subId": "ID2_02.008"
+      },
+      "Wait for the Invitation | To Respond": {
+        "vn": "Chờ lời mời | Chờ phản hồi",
+        "subId": "ID2_02.009"
+      },
+      "Wait for the Invitation | To Inform": {
+        "vn": "Chờ lời mời | Thông báo",
+        "subId": "ID2_02.010"
+      },
+      "Wait for the Invitation | Wait for the Invitation": {
+        "vn": "Chờ lời mời | Chờ lời mời",
+        "subId": "ID2_02.011"
+      },
+      "Wait for the Invitation | Wait a Lunar Cycle": {
+        "vn": "Chờ lời mời | Chờ chu kỳ",
+        "subId": "ID2_02.012"
+      },
+      "Wait a Lunar Cycle | To Respond": {
+        "vn": "Chờ chu kỳ | Chờ phản hồi",
+        "subId": "ID2_02.013"
+      },
+      "Wait a Lunar Cycle | To Inform": {
+        "vn": "Chờ chu kỳ | Thông báo",
+        "subId": "ID2_02.014"
+      },
+      "Wait a Lunar Cycle | Wait for the Invitation": {
+        "vn": "Chờ chu kỳ | Chờ lời mời",
+        "subId": "ID2_02.015"
+      },
+      "Wait a Lunar Cycle | Wait a Lunar Cycle": {
+        "vn": "Chờ chu kỳ | Chờ chu kỳ",
+        "subId": "ID2_02.016"
+      }
+    }
+  },
+  "InnerAuthority": {
+    "id": "ID2_03",
+    "nameEN": "Authority Pair",
+    "nameVN": "Quyền năng",
+    "values": {
+      "Emotional | Emotional": {
+        "vn": "Cảm xúc | Cảm xúc",
+        "subId": "ID2_03.001"
+      },
+      "Emotional | Sacral": {
+        "vn": "Cảm xúc | Sinh lực",
+        "subId": "ID2_03.002"
+      },
+      "Emotional | Splenic": {
+        "vn": "Cảm xúc | Trực giác",
+        "subId": "ID2_03.003"
+      },
+      "Emotional | Ego Manifested": {
+        "vn": "Cảm xúc | Bản ngã (M)",
+        "subId": "ID2_03.004"
+      },
+      "Emotional | Self Projected": {
+        "vn": "Cảm xúc | Danh tính",
+        "subId": "ID2_03.005"
+      },
+      "Emotional | Ego Projected": {
+        "vn": "Cảm xúc | Bản ngã (P)",
+        "subId": "ID2_03.006"
+      },
+      "Emotional | Mental": {
+        "vn": "Cảm xúc | Nhận thức",
+        "subId": "ID2_03.007"
+      },
+      "Emotional | Lunar": {
+        "vn": "Cảm xúc | Chu kỳ",
+        "subId": "ID2_03.008"
+      },
+      "Sacral | Emotional": {
+        "vn": "Sinh lực | Cảm xúc",
+        "subId": "ID2_03.009"
+      },
+      "Sacral | Sacral": {
+        "vn": "Sinh lực | Sinh lực",
+        "subId": "ID2_03.010"
+      },
+      "Sacral | Splenic": {
+        "vn": "Sinh lực | Trực giác",
+        "subId": "ID2_03.011"
+      },
+      "Sacral | Ego Manifested": {
+        "vn": "Sinh lực | Bản ngã (M)",
+        "subId": "ID2_03.012"
+      },
+      "Sacral | Self Projected": {
+        "vn": "Sinh lực | Danh tính",
+        "subId": "ID2_03.013"
+      },
+      "Sacral | Ego Projected": {
+        "vn": "Sinh lực | Bản ngã (P)",
+        "subId": "ID2_03.014"
+      },
+      "Sacral | Mental": {
+        "vn": "Sinh lực | Nhận thức",
+        "subId": "ID2_03.015"
+      },
+      "Sacral | Lunar": {
+        "vn": "Sinh lực | Chu kỳ",
+        "subId": "ID2_03.016"
+      },
+      "Splenic | Emotional": {
+        "vn": "Trực giác | Cảm xúc",
+        "subId": "ID2_03.017"
+      },
+      "Splenic | Sacral": {
+        "vn": "Trực giác | Sinh lực",
+        "subId": "ID2_03.018"
+      },
+      "Splenic | Splenic": {
+        "vn": "Trực giác | Trực giác",
+        "subId": "ID2_03.019"
+      },
+      "Splenic | Ego Manifested": {
+        "vn": "Trực giác | Bản ngã (M)",
+        "subId": "ID2_03.020"
+      },
+      "Splenic | Self Projected": {
+        "vn": "Trực giác | Danh tính",
+        "subId": "ID2_03.021"
+      },
+      "Splenic | Ego Projected": {
+        "vn": "Trực giác | Bản ngã (P)",
+        "subId": "ID2_03.022"
+      },
+      "Splenic | Mental": {
+        "vn": "Trực giác | Nhận thức",
+        "subId": "ID2_03.023"
+      },
+      "Splenic | Lunar": {
+        "vn": "Trực giác | Chu kỳ",
+        "subId": "ID2_03.024"
+      },
+      "Ego Manifested | Emotional": {
+        "vn": "Bản ngã (M) | Cảm xúc",
+        "subId": "ID2_03.025"
+      },
+      "Ego Manifested | Sacral": {
+        "vn": "Bản ngã (M) | Sinh lực",
+        "subId": "ID2_03.026"
+      },
+      "Ego Manifested | Splenic": {
+        "vn": "Bản ngã (M) | Trực giác",
+        "subId": "ID2_03.027"
+      },
+      "Ego Manifested | Ego Manifested": {
+        "vn": "Bản ngã (M) | Bản ngã (M)",
+        "subId": "ID2_03.028"
+      },
+      "Ego Manifested | Self Projected": {
+        "vn": "Bản ngã (M) | Danh tính",
+        "subId": "ID2_03.029"
+      },
+      "Ego Manifested | Ego Projected": {
+        "vn": "Bản ngã (M) | Bản ngã (P)",
+        "subId": "ID2_03.030"
+      },
+      "Ego Manifested | Mental": {
+        "vn": "Bản ngã (M) | Nhận thức",
+        "subId": "ID2_03.031"
+      },
+      "Ego Manifested | Lunar": {
+        "vn": "Bản ngã (M) | Chu kỳ",
+        "subId": "ID2_03.032"
+      },
+      "Self Projected | Emotional": {
+        "vn": "Danh tính | Cảm xúc",
+        "subId": "ID2_03.033"
+      },
+      "Self Projected | Sacral": {
+        "vn": "Danh tính | Sinh lực",
+        "subId": "ID2_03.034"
+      },
+      "Self Projected | Splenic": {
+        "vn": "Danh tính | Trực giác",
+        "subId": "ID2_03.035"
+      },
+      "Self Projected | Ego Manifested": {
+        "vn": "Danh tính | Bản ngã (M)",
+        "subId": "ID2_03.036"
+      },
+      "Self Projected | Self Projected": {
+        "vn": "Danh tính | Danh tính",
+        "subId": "ID2_03.037"
+      },
+      "Self Projected | Ego Projected": {
+        "vn": "Danh tính | Bản ngã (P)",
+        "subId": "ID2_03.038"
+      },
+      "Self Projected | Mental": {
+        "vn": "Danh tính | Nhận thức",
+        "subId": "ID2_03.039"
+      },
+      "Self Projected | Lunar": {
+        "vn": "Danh tính | Chu kỳ",
+        "subId": "ID2_03.040"
+      },
+      "Ego Projected | Emotional": {
+        "vn": "Bản ngã (P) | Cảm xúc",
+        "subId": "ID2_03.041"
+      },
+      "Ego Projected | Sacral": {
+        "vn": "Bản ngã (P) | Sinh lực",
+        "subId": "ID2_03.042"
+      },
+      "Ego Projected | Splenic": {
+        "vn": "Bản ngã (P) | Trực giác",
+        "subId": "ID2_03.043"
+      },
+      "Ego Projected | Ego Manifested": {
+        "vn": "Bản ngã (P) | Bản ngã (M)",
+        "subId": "ID2_03.044"
+      },
+      "Ego Projected | Self Projected": {
+        "vn": "Bản ngã (P) | Danh tính",
+        "subId": "ID2_03.045"
+      },
+      "Ego Projected | Ego Projected": {
+        "vn": "Bản ngã (P) | Bản ngã (P)",
+        "subId": "ID2_03.046"
+      },
+      "Ego Projected | Mental": {
+        "vn": "Bản ngã (P) | Nhận thức",
+        "subId": "ID2_03.047"
+      },
+      "Ego Projected | Lunar": {
+        "vn": "Bản ngã (P) | Chu kỳ",
+        "subId": "ID2_03.048"
+      },
+      "Mental | Emotional": {
+        "vn": "Nhận thức | Cảm xúc",
+        "subId": "ID2_03.049"
+      },
+      "Mental | Sacral": {
+        "vn": "Nhận thức | Sinh lực",
+        "subId": "ID2_03.050"
+      },
+      "Mental | Splenic": {
+        "vn": "Nhận thức | Trực giác",
+        "subId": "ID2_03.051"
+      },
+      "Mental | Ego Manifested": {
+        "vn": "Nhận thức | Bản ngã (M)",
+        "subId": "ID2_03.052"
+      },
+      "Mental | Self Projected": {
+        "vn": "Nhận thức | Danh tính",
+        "subId": "ID2_03.053"
+      },
+      "Mental | Ego Projected": {
+        "vn": "Nhận thức | Bản ngã (P)",
+        "subId": "ID2_03.054"
+      },
+      "Mental | Mental": {
+        "vn": "Nhận thức | Nhận thức",
+        "subId": "ID2_03.055"
+      },
+      "Mental | Lunar": {
+        "vn": "Nhận thức | Chu kỳ",
+        "subId": "ID2_03.056"
+      },
+      "Lunar | Emotional": {
+        "vn": "Chu kỳ | Cảm xúc",
+        "subId": "ID2_03.057"
+      },
+      "Lunar | Sacral": {
+        "vn": "Chu kỳ | Sinh lực",
+        "subId": "ID2_03.058"
+      },
+      "Lunar | Splenic": {
+        "vn": "Chu kỳ | Trực giác",
+        "subId": "ID2_03.059"
+      },
+      "Lunar | Ego Manifested": {
+        "vn": "Chu kỳ | Bản ngã (M)",
+        "subId": "ID2_03.060"
+      },
+      "Lunar | Self Projected": {
+        "vn": "Chu kỳ | Danh tính",
+        "subId": "ID2_03.061"
+      },
+      "Lunar | Ego Projected": {
+        "vn": "Chu kỳ | Bản ngã (P)",
+        "subId": "ID2_03.062"
+      },
+      "Lunar | Mental": {
+        "vn": "Chu kỳ | Nhận thức",
+        "subId": "ID2_03.063"
+      },
+      "Lunar | Lunar": {
+        "vn": "Chu kỳ | Chu kỳ",
+        "subId": "ID2_03.064"
+      }
+    }
+  },
+  "Channels": {
+    "id": "ID2_04",
+    "nameEN": "Combined Channels",
+    "nameVN": "Các kênh chung",
+    "values": {}
+  },
+  "Definition": {
+    "id": "ID2_05",
+    "nameEN": "Definition",
+    "nameVN": "Phương thức liên kết",
+    "values": {
+      "No Definition": {
+        "vn": "Không liên kết",
+        "subId": "ID2_05.001"
+      },
+      "Single Definition": {
+        "vn": "Liên kết đơn",
+        "subId": "ID2_05.002"
+      },
+      "Split Definition": {
+        "vn": "Liên kết đôi",
+        "subId": "ID2_05.003"
+      },
+      "Triple Split Definition": {
+        "vn": "Liên kết ba",
+        "subId": "ID2_05.004"
+      },
+      "Quadruple Split Definition": {
+        "vn": "Liên kết bốn",
+        "subId": "ID2_05.005"
+      }
+    }
+  },
+  "ConnectionTheme": {
+    "id": "ID2_06",
+    "nameEN": "Connection Theme",
+    "nameVN": "Chủ đề kết nối",
+    "values": {
+      "5 - 4, Not A Relationship Anymore": {
+        "vn": "5 - 4",
+        "subId": "ID2_06.001"
+      },
+      "6 - 3, Better To Be Free": {
+        "vn": "6 - 3",
+        "subId": "ID2_06.002"
+      },
+      "7 - 2, Work To Do": {
+        "vn": "7 - 2",
+        "subId": "ID2_06.003"
+      },
+      "8 - 1, Have Some Fun": {
+        "vn": "8 - 1",
+        "subId": "ID2_06.004"
+      },
+      "9 - 0, Nowhere To Go": {
+        "vn": "9 - 0",
+        "subId": "ID2_06.005"
+      }
+    }
+  },
+  "Companionship": {
+    "id": "ID2_07",
+    "nameEN": "Companionship Channels",
+    "nameVN": "Kênh đồng hành",
+    "values": {
+      "Channel of Awakening (20-10)": {
+        "vn": "20 - 10",
+        "subId": "ID2_07.001"
+      },
+      "Channel of Inspiration (8-1)": {
+        "vn": "8 - 1",
+        "subId": "ID2_07.002"
+      },
+      "Channel of Beat (2-14)": {
+        "vn": "2 - 14",
+        "subId": "ID2_07.003"
+      },
+      "Channel of Mutation (60-3)": {
+        "vn": "60 - 3",
+        "subId": "ID2_07.004"
+      },
+      "Channel of Logic (63-4)": {
+        "vn": "63 - 4",
+        "subId": "ID2_07.005"
+      },
+      "Channel of Rhythm (15-5)": {
+        "vn": "15 - 5",
+        "subId": "ID2_07.006"
+      },
+      "Channel of Mating (59-6)": {
+        "vn": "59 - 6",
+        "subId": "ID2_07.007"
+      },
+      "Channel of Alpha (31-7)": {
+        "vn": "31 - 7",
+        "subId": "ID2_07.008"
+      },
+      "Channel of Concentration (9-52)": {
+        "vn": "9 - 52",
+        "subId": "ID2_07.009"
+      },
+      "Channel of Exploration (10-34)": {
+        "vn": "10 - 34",
+        "subId": "ID2_07.010"
+      },
+      "Channel of Perfected Form (10-57)": {
+        "vn": "10 - 57",
+        "subId": "ID2_07.011"
+      },
+      "Channel of Curiosity (11-56)": {
+        "vn": "11 - 56",
+        "subId": "ID2_07.012"
+      },
+      "Channel of Openness (12-22)": {
+        "vn": "12 - 22",
+        "subId": "ID2_07.013"
+      },
+      "Channel of Prodigal (33-13)": {
+        "vn": "33 - 13",
+        "subId": "ID2_07.014"
+      },
+      "Channel of Wavelength (16-48)": {
+        "vn": "16 - 48",
+        "subId": "ID2_07.015"
+      },
+      "Channel of Acceptance (17-62)": {
+        "vn": "17 - 62",
+        "subId": "ID2_07.016"
+      },
+      "Channel of Judgment (18-58)": {
+        "vn": "18 - 58",
+        "subId": "ID2_07.017"
+      },
+      "Channel of Synthesis (19-49)": {
+        "vn": "19 - 49",
+        "subId": "ID2_07.018"
+      },
+      "Channel of Charisma (34-20)": {
+        "vn": "34 - 20",
+        "subId": "ID2_07.019"
+      },
+      "Channel of Brainwave (20-57)": {
+        "vn": "20 - 57",
+        "subId": "ID2_07.020"
+      },
+      "Channel of Money (21-45)": {
+        "vn": "21 - 45",
+        "subId": "ID2_07.021"
+      },
+      "Channel of Structuring (43-23)": {
+        "vn": "43 - 23",
+        "subId": "ID2_07.022"
+      },
+      "Channel of Awareness (61-24)": {
+        "vn": "61 - 24",
+        "subId": "ID2_07.023"
+      },
+      "Channel of Initiation (51-25)": {
+        "vn": "51 - 25",
+        "subId": "ID2_07.024"
+      },
+      "Channel of Surrender (26-44)": {
+        "vn": "26 - 44",
+        "subId": "ID2_07.025"
+      },
+      "Channel of Preservation (27-50)": {
+        "vn": "27 - 50",
+        "subId": "ID2_07.026"
+      },
+      "Channel of Struggle (28-38)": {
+        "vn": "28 - 38",
+        "subId": "ID2_07.027"
+      },
+      "Channel of Discovery (29-46)": {
+        "vn": "29 - 46",
+        "subId": "ID2_07.028"
+      },
+      "Channel of Recognition (30-41)": {
+        "vn": "30 - 41",
+        "subId": "ID2_07.029"
+      },
+      "Channel of Transformation (32-54)": {
+        "vn": "32 - 54",
+        "subId": "ID2_07.030"
+      },
+      "Channel of Power (34-57)": {
+        "vn": "34 - 57",
+        "subId": "ID2_07.031"
+      },
+      "Channel of Transitoriness (35-36)": {
+        "vn": "35 - 36",
+        "subId": "ID2_07.032"
+      },
+      "Channel of Community (37-40)": {
+        "vn": "37 - 40",
+        "subId": "ID2_07.033"
+      },
+      "Channel of Emoting (39-55)": {
+        "vn": "39 - 55",
+        "subId": "ID2_07.034"
+      },
+      "Channel of Maturation (42-53)": {
+        "vn": "42 - 53",
+        "subId": "ID2_07.035"
+      },
+      "Channel of Abstraction (47-64)": {
+        "vn": "47 - 64",
+        "subId": "ID2_07.036"
+      }
+    }
+  },
+  "Dominance": {
+    "id": "ID2_08",
+    "nameEN": "Dominance Channels",
+    "nameVN": "Kênh chi phối",
+    "values": {
+      "Channel of Awakening (20-10)": {
+        "vn": "20 - 10",
+        "subId": "ID2_08.001"
+      },
+      "Channel of Inspiration (8-1)": {
+        "vn": "8 - 1",
+        "subId": "ID2_08.002"
+      },
+      "Channel of Beat (2-14)": {
+        "vn": "2 - 14",
+        "subId": "ID2_08.003"
+      },
+      "Channel of Mutation (60-3)": {
+        "vn": "60 - 3",
+        "subId": "ID2_08.004"
+      },
+      "Channel of Logic (63-4)": {
+        "vn": "63 - 4",
+        "subId": "ID2_08.005"
+      },
+      "Channel of Rhythm (15-5)": {
+        "vn": "15 - 5",
+        "subId": "ID2_08.006"
+      },
+      "Channel of Mating (59-6)": {
+        "vn": "59 - 6",
+        "subId": "ID2_08.007"
+      },
+      "Channel of Alpha (31-7)": {
+        "vn": "31 - 7",
+        "subId": "ID2_08.008"
+      },
+      "Channel of Concentration (9-52)": {
+        "vn": "9 - 52",
+        "subId": "ID2_08.009"
+      },
+      "Channel of Exploration (10-34)": {
+        "vn": "10 - 34",
+        "subId": "ID2_08.010"
+      },
+      "Channel of Perfected Form (10-57)": {
+        "vn": "10 - 57",
+        "subId": "ID2_08.011"
+      },
+      "Channel of Curiosity (11-56)": {
+        "vn": "11 - 56",
+        "subId": "ID2_08.012"
+      },
+      "Channel of Openness (12-22)": {
+        "vn": "12 - 22",
+        "subId": "ID2_08.013"
+      },
+      "Channel of Prodigal (33-13)": {
+        "vn": "33 - 13",
+        "subId": "ID2_08.014"
+      },
+      "Channel of Wavelength (16-48)": {
+        "vn": "16 - 48",
+        "subId": "ID2_08.015"
+      },
+      "Channel of Acceptance (17-62)": {
+        "vn": "17 - 62",
+        "subId": "ID2_08.016"
+      },
+      "Channel of Judgment (18-58)": {
+        "vn": "18 - 58",
+        "subId": "ID2_08.017"
+      },
+      "Channel of Synthesis (19-49)": {
+        "vn": "19 - 49",
+        "subId": "ID2_08.018"
+      },
+      "Channel of Charisma (34-20)": {
+        "vn": "34 - 20",
+        "subId": "ID2_08.019"
+      },
+      "Channel of Brainwave (20-57)": {
+        "vn": "20 - 57",
+        "subId": "ID2_08.020"
+      },
+      "Channel of Money (21-45)": {
+        "vn": "21 - 45",
+        "subId": "ID2_08.021"
+      },
+      "Channel of Structuring (43-23)": {
+        "vn": "43 - 23",
+        "subId": "ID2_08.022"
+      },
+      "Channel of Awareness (61-24)": {
+        "vn": "61 - 24",
+        "subId": "ID2_08.023"
+      },
+      "Channel of Initiation (51-25)": {
+        "vn": "51 - 25",
+        "subId": "ID2_08.024"
+      },
+      "Channel of Surrender (26-44)": {
+        "vn": "26 - 44",
+        "subId": "ID2_08.025"
+      },
+      "Channel of Preservation (27-50)": {
+        "vn": "27 - 50",
+        "subId": "ID2_08.026"
+      },
+      "Channel of Struggle (28-38)": {
+        "vn": "28 - 38",
+        "subId": "ID2_08.027"
+      },
+      "Channel of Discovery (29-46)": {
+        "vn": "29 - 46",
+        "subId": "ID2_08.028"
+      },
+      "Channel of Recognition (30-41)": {
+        "vn": "30 - 41",
+        "subId": "ID2_08.029"
+      },
+      "Channel of Transformation (32-54)": {
+        "vn": "32 - 54",
+        "subId": "ID2_08.030"
+      },
+      "Channel of Power (34-57)": {
+        "vn": "34 - 57",
+        "subId": "ID2_08.031"
+      },
+      "Channel of Transitoriness (35-36)": {
+        "vn": "35 - 36",
+        "subId": "ID2_08.032"
+      },
+      "Channel of Community (37-40)": {
+        "vn": "37 - 40",
+        "subId": "ID2_08.033"
+      },
+      "Channel of Emoting (39-55)": {
+        "vn": "39 - 55",
+        "subId": "ID2_08.034"
+      },
+      "Channel of Maturation (42-53)": {
+        "vn": "42 - 53",
+        "subId": "ID2_08.035"
+      },
+      "Channel of Abstraction (47-64)": {
+        "vn": "47 - 64",
+        "subId": "ID2_08.036"
+      }
+    }
+  },
+  "Electromagnetic": {
+    "id": "ID2_09",
+    "nameEN": "Electromagnetic Channels",
+    "nameVN": "Kênh thu hút",
+    "values": {
+      "Channel of Awakening (20-10)": {
+        "vn": "20 - 10",
+        "subId": "ID2_09.001"
+      },
+      "Channel of Inspiration (8-1)": {
+        "vn": "8 - 1",
+        "subId": "ID2_09.002"
+      },
+      "Channel of Beat (2-14)": {
+        "vn": "2 - 14",
+        "subId": "ID2_09.003"
+      },
+      "Channel of Mutation (60-3)": {
+        "vn": "60 - 3",
+        "subId": "ID2_09.004"
+      },
+      "Channel of Logic (63-4)": {
+        "vn": "63 - 4",
+        "subId": "ID2_09.005"
+      },
+      "Channel of Rhythm (15-5)": {
+        "vn": "15 - 5",
+        "subId": "ID2_09.006"
+      },
+      "Channel of Mating (59-6)": {
+        "vn": "59 - 6",
+        "subId": "ID2_09.007"
+      },
+      "Channel of Alpha (31-7)": {
+        "vn": "31 - 7",
+        "subId": "ID2_09.008"
+      },
+      "Channel of Concentration (9-52)": {
+        "vn": "9 - 52",
+        "subId": "ID2_09.009"
+      },
+      "Channel of Exploration (10-34)": {
+        "vn": "10 - 34",
+        "subId": "ID2_09.010"
+      },
+      "Channel of Perfected Form (10-57)": {
+        "vn": "10 - 57",
+        "subId": "ID2_09.011"
+      },
+      "Channel of Curiosity (11-56)": {
+        "vn": "11 - 56",
+        "subId": "ID2_09.012"
+      },
+      "Channel of Openness (12-22)": {
+        "vn": "12 - 22",
+        "subId": "ID2_09.013"
+      },
+      "Channel of Prodigal (33-13)": {
+        "vn": "33 - 13",
+        "subId": "ID2_09.014"
+      },
+      "Channel of Wavelength (16-48)": {
+        "vn": "16 - 48",
+        "subId": "ID2_09.015"
+      },
+      "Channel of Acceptance (17-62)": {
+        "vn": "17 - 62",
+        "subId": "ID2_09.016"
+      },
+      "Channel of Judgment (18-58)": {
+        "vn": "18 - 58",
+        "subId": "ID2_09.017"
+      },
+      "Channel of Synthesis (19-49)": {
+        "vn": "19 - 49",
+        "subId": "ID2_09.018"
+      },
+      "Channel of Charisma (34-20)": {
+        "vn": "34 - 20",
+        "subId": "ID2_09.019"
+      },
+      "Channel of Brainwave (20-57)": {
+        "vn": "20 - 57",
+        "subId": "ID2_09.020"
+      },
+      "Channel of Money (21-45)": {
+        "vn": "21 - 45",
+        "subId": "ID2_09.021"
+      },
+      "Channel of Structuring (43-23)": {
+        "vn": "43 - 23",
+        "subId": "ID2_09.022"
+      },
+      "Channel of Awareness (61-24)": {
+        "vn": "61 - 24",
+        "subId": "ID2_09.023"
+      },
+      "Channel of Initiation (51-25)": {
+        "vn": "51 - 25",
+        "subId": "ID2_09.024"
+      },
+      "Channel of Surrender (26-44)": {
+        "vn": "26 - 44",
+        "subId": "ID2_09.025"
+      },
+      "Channel of Preservation (27-50)": {
+        "vn": "27 - 50",
+        "subId": "ID2_09.026"
+      },
+      "Channel of Struggle (28-38)": {
+        "vn": "28 - 38",
+        "subId": "ID2_09.027"
+      },
+      "Channel of Discovery (29-46)": {
+        "vn": "29 - 46",
+        "subId": "ID2_09.028"
+      },
+      "Channel of Recognition (30-41)": {
+        "vn": "30 - 41",
+        "subId": "ID2_09.029"
+      },
+      "Channel of Transformation (32-54)": {
+        "vn": "32 - 54",
+        "subId": "ID2_09.030"
+      },
+      "Channel of Power (34-57)": {
+        "vn": "34 - 57",
+        "subId": "ID2_09.031"
+      },
+      "Channel of Transitoriness (35-36)": {
+        "vn": "35 - 36",
+        "subId": "ID2_09.032"
+      },
+      "Channel of Community (37-40)": {
+        "vn": "37 - 40",
+        "subId": "ID2_09.033"
+      },
+      "Channel of Emoting (39-55)": {
+        "vn": "39 - 55",
+        "subId": "ID2_09.034"
+      },
+      "Channel of Maturation (42-53)": {
+        "vn": "42 - 53",
+        "subId": "ID2_09.035"
+      },
+      "Channel of Abstraction (47-64)": {
+        "vn": "47 - 64",
+        "subId": "ID2_09.036"
+      }
+    }
+  },
+  "Compromise": {
+    "id": "ID2_10",
+    "nameEN": "Compromise Channels",
+    "nameVN": "Kênh thỏa hiệp",
+    "values": {
+      "Channel of Awakening (20-10)": {
+        "vn": "20 - 10",
+        "subId": "ID2_10.001"
+      },
+      "Channel of Inspiration (8-1)": {
+        "vn": "8 - 1",
+        "subId": "ID2_10.002"
+      },
+      "Channel of Beat (2-14)": {
+        "vn": "2 - 14",
+        "subId": "ID2_10.003"
+      },
+      "Channel of Mutation (60-3)": {
+        "vn": "60 - 3",
+        "subId": "ID2_10.004"
+      },
+      "Channel of Logic (63-4)": {
+        "vn": "63 - 4",
+        "subId": "ID2_10.005"
+      },
+      "Channel of Rhythm (15-5)": {
+        "vn": "15 - 5",
+        "subId": "ID2_10.006"
+      },
+      "Channel of Mating (59-6)": {
+        "vn": "59 - 6",
+        "subId": "ID2_10.007"
+      },
+      "Channel of Alpha (31-7)": {
+        "vn": "31 - 7",
+        "subId": "ID2_10.008"
+      },
+      "Channel of Concentration (9-52)": {
+        "vn": "9 - 52",
+        "subId": "ID2_10.009"
+      },
+      "Channel of Exploration (10-34)": {
+        "vn": "10 - 34",
+        "subId": "ID2_10.010"
+      },
+      "Channel of Perfected Form (10-57)": {
+        "vn": "10 - 57",
+        "subId": "ID2_10.011"
+      },
+      "Channel of Curiosity (11-56)": {
+        "vn": "11 - 56",
+        "subId": "ID2_10.012"
+      },
+      "Channel of Openness (12-22)": {
+        "vn": "12 - 22",
+        "subId": "ID2_10.013"
+      },
+      "Channel of Prodigal (33-13)": {
+        "vn": "33 - 13",
+        "subId": "ID2_10.014"
+      },
+      "Channel of Wavelength (16-48)": {
+        "vn": "16 - 48",
+        "subId": "ID2_10.015"
+      },
+      "Channel of Acceptance (17-62)": {
+        "vn": "17 - 62",
+        "subId": "ID2_10.016"
+      },
+      "Channel of Judgment (18-58)": {
+        "vn": "18 - 58",
+        "subId": "ID2_10.017"
+      },
+      "Channel of Synthesis (19-49)": {
+        "vn": "19 - 49",
+        "subId": "ID2_10.018"
+      },
+      "Channel of Charisma (34-20)": {
+        "vn": "34 - 20",
+        "subId": "ID2_10.019"
+      },
+      "Channel of Brainwave (20-57)": {
+        "vn": "20 - 57",
+        "subId": "ID2_10.020"
+      },
+      "Channel of Money (21-45)": {
+        "vn": "21 - 45",
+        "subId": "ID2_10.021"
+      },
+      "Channel of Structuring (43-23)": {
+        "vn": "43 - 23",
+        "subId": "ID2_10.022"
+      },
+      "Channel of Awareness (61-24)": {
+        "vn": "61 - 24",
+        "subId": "ID2_10.023"
+      },
+      "Channel of Initiation (51-25)": {
+        "vn": "51 - 25",
+        "subId": "ID2_10.024"
+      },
+      "Channel of Surrender (26-44)": {
+        "vn": "26 - 44",
+        "subId": "ID2_10.025"
+      },
+      "Channel of Preservation (27-50)": {
+        "vn": "27 - 50",
+        "subId": "ID2_10.026"
+      },
+      "Channel of Struggle (28-38)": {
+        "vn": "28 - 38",
+        "subId": "ID2_10.027"
+      },
+      "Channel of Discovery (29-46)": {
+        "vn": "29 - 46",
+        "subId": "ID2_10.028"
+      },
+      "Channel of Recognition (30-41)": {
+        "vn": "30 - 41",
+        "subId": "ID2_10.029"
+      },
+      "Channel of Transformation (32-54)": {
+        "vn": "32 - 54",
+        "subId": "ID2_10.030"
+      },
+      "Channel of Power (34-57)": {
+        "vn": "34 - 57",
+        "subId": "ID2_10.031"
+      },
+      "Channel of Transitoriness (35-36)": {
+        "vn": "35 - 36",
+        "subId": "ID2_10.032"
+      },
+      "Channel of Community (37-40)": {
+        "vn": "37 - 40",
+        "subId": "ID2_10.033"
+      },
+      "Channel of Emoting (39-55)": {
+        "vn": "39 - 55",
+        "subId": "ID2_10.034"
+      },
+      "Channel of Maturation (42-53)": {
+        "vn": "42 - 53",
+        "subId": "ID2_10.035"
+      },
+      "Channel of Abstraction (47-64)": {
+        "vn": "47 - 64",
+        "subId": "ID2_10.036"
+      }
+    }
+  },
+  "GatesLove": {
+    "id": "ID2_11",
+    "nameEN": "Gates of Love",
+    "nameVN": "Cổng kết nối",
+    "values": {
+      "10": {
+        "vn": "10 (Riêng)",
+        "subId": "ID2_11.001"
+      },
+      "15": {
+        "vn": "15 (Riêng)",
+        "subId": "ID2_11.002"
+      },
+      "25": {
+        "vn": "25 (Riêng)",
+        "subId": "ID2_11.003"
+      },
+      "28": {
+        "vn": "28 (Riêng)",
+        "subId": "ID2_11.004"
+      },
+      "40": {
+        "vn": "40 (Riêng)",
+        "subId": "ID2_11.005"
+      },
+      "41": {
+        "vn": "41 (Riêng)",
+        "subId": "ID2_11.006"
+      },
+      "44": {
+        "vn": "44 (Riêng)",
+        "subId": "ID2_11.007"
+      },
+      "46": {
+        "vn": "46 (Riêng)",
+        "subId": "ID2_11.008"
+      },
+      "55": {
+        "vn": "55 (Riêng)",
+        "subId": "ID2_11.009"
+      },
+      "58": {
+        "vn": "58 (Riêng)",
+        "subId": "ID2_11.010"
+      },
+      "10.02": {
+        "vn": "10 (Trùng)",
+        "subId": "ID2_11.001.02"
+      },
+      "15.02": {
+        "vn": "15 (Trùng)",
+        "subId": "ID2_11.002.02"
+      },
+      "25.02": {
+        "vn": "25 (Trùng)",
+        "subId": "ID2_11.003.02"
+      },
+      "28.02": {
+        "vn": "28 (Trùng)",
+        "subId": "ID2_11.004.02"
+      },
+      "40.02": {
+        "vn": "40 (Trùng)",
+        "subId": "ID2_11.005.02"
+      },
+      "41.02": {
+        "vn": "41 (Trùng)",
+        "subId": "ID2_11.006.02"
+      },
+      "44.02": {
+        "vn": "44 (Trùng)",
+        "subId": "ID2_11.007.02"
+      },
+      "46.02": {
+        "vn": "46 (Trùng)",
+        "subId": "ID2_11.008.02"
+      },
+      "55.02": {
+        "vn": "55 (Trùng)",
+        "subId": "ID2_11.009.02"
+      },
+      "58.02": {
+        "vn": "58 (Trùng)",
+        "subId": "ID2_11.010.02"
+      }
+    }
+  },
+  "Profile": {
+    "id": "ID2_12",
+    "nameEN": "Profile Pair",
+    "nameVN": "Hồ sơ kết nối",
+    "values": {
+      "1/3 | 1/3": {
+        "vn": "1 / 3 | 1 / 3",
+        "subId": "ID2_12.001"
+      },
+      "1/3 | 1/4": {
+        "vn": "1 / 3 | 1 / 4",
+        "subId": "ID2_12.002"
+      },
+      "1/3 | 2/4": {
+        "vn": "1 / 3 | 2 / 4",
+        "subId": "ID2_12.003"
+      },
+      "1/3 | 2/5": {
+        "vn": "1 / 3 | 2 / 5",
+        "subId": "ID2_12.004"
+      },
+      "1/3 | 3/5": {
+        "vn": "1 / 3 | 3 / 5",
+        "subId": "ID2_12.005"
+      },
+      "1/3 | 3/6": {
+        "vn": "1 / 3 | 3 / 6",
+        "subId": "ID2_12.006"
+      },
+      "1/3 | 4/1": {
+        "vn": "1 / 3 | 4 / 1",
+        "subId": "ID2_12.007"
+      },
+      "1/3 | 4/6": {
+        "vn": "1 / 3 | 4 / 6",
+        "subId": "ID2_12.008"
+      },
+      "1/3 | 5/1": {
+        "vn": "1 / 3 | 5 / 1",
+        "subId": "ID2_12.009"
+      },
+      "1/3 | 5/2": {
+        "vn": "1 / 3 | 5 / 2",
+        "subId": "ID2_12.010"
+      },
+      "1/3 | 6/2": {
+        "vn": "1 / 3 | 6 / 2",
+        "subId": "ID2_12.011"
+      },
+      "1/3 | 6/3": {
+        "vn": "1 / 3 | 6 / 3",
+        "subId": "ID2_12.012"
+      },
+      "1/4 | 1/3": {
+        "vn": "1 / 4 | 1 / 3",
+        "subId": "ID2_12.013"
+      },
+      "1/4 | 1/4": {
+        "vn": "1 / 4 | 1 / 4",
+        "subId": "ID2_12.014"
+      },
+      "1/4 | 2/4": {
+        "vn": "1 / 4 | 2 / 4",
+        "subId": "ID2_12.015"
+      },
+      "1/4 | 2/5": {
+        "vn": "1 / 4 | 2 / 5",
+        "subId": "ID2_12.016"
+      },
+      "1/4 | 3/5": {
+        "vn": "1 / 4 | 3 / 5",
+        "subId": "ID2_12.017"
+      },
+      "1/4 | 3/6": {
+        "vn": "1 / 4 | 3 / 6",
+        "subId": "ID2_12.018"
+      },
+      "1/4 | 4/1": {
+        "vn": "1 / 4 | 4 / 1",
+        "subId": "ID2_12.019"
+      },
+      "1/4 | 4/6": {
+        "vn": "1 / 4 | 4 / 6",
+        "subId": "ID2_12.020"
+      },
+      "1/4 | 5/1": {
+        "vn": "1 / 4 | 5 / 1",
+        "subId": "ID2_12.021"
+      },
+      "1/4 | 5/2": {
+        "vn": "1 / 4 | 5 / 2",
+        "subId": "ID2_12.022"
+      },
+      "1/4 | 6/2": {
+        "vn": "1 / 4 | 6 / 2",
+        "subId": "ID2_12.023"
+      },
+      "1/4 | 6/3": {
+        "vn": "1 / 4 | 6 / 3",
+        "subId": "ID2_12.024"
+      },
+      "2/4 | 1/3": {
+        "vn": "2 / 4 | 1 / 3",
+        "subId": "ID2_12.025"
+      },
+      "2/4 | 1/4": {
+        "vn": "2 / 4 | 1 / 4",
+        "subId": "ID2_12.026"
+      },
+      "2/4 | 2/4": {
+        "vn": "2 / 4 | 2 / 4",
+        "subId": "ID2_12.027"
+      },
+      "2/4 | 2/5": {
+        "vn": "2 / 4 | 2 / 5",
+        "subId": "ID2_12.028"
+      },
+      "2/4 | 3/5": {
+        "vn": "2 / 4 | 3 / 5",
+        "subId": "ID2_12.029"
+      },
+      "2/4 | 3/6": {
+        "vn": "2 / 4 | 3 / 6",
+        "subId": "ID2_12.030"
+      },
+      "2/4 | 4/1": {
+        "vn": "2 / 4 | 4 / 1",
+        "subId": "ID2_12.031"
+      },
+      "2/4 | 4/6": {
+        "vn": "2 / 4 | 4 / 6",
+        "subId": "ID2_12.032"
+      },
+      "2/4 | 5/1": {
+        "vn": "2 / 4 | 5 / 1",
+        "subId": "ID2_12.033"
+      },
+      "2/4 | 5/2": {
+        "vn": "2 / 4 | 5 / 2",
+        "subId": "ID2_12.034"
+      },
+      "2/4 | 6/2": {
+        "vn": "2 / 4 | 6 / 2",
+        "subId": "ID2_12.035"
+      },
+      "2/4 | 6/3": {
+        "vn": "2 / 4 | 6 / 3",
+        "subId": "ID2_12.036"
+      },
+      "2/5 | 1/3": {
+        "vn": "2 / 5 | 1 / 3",
+        "subId": "ID2_12.037"
+      },
+      "2/5 | 1/4": {
+        "vn": "2 / 5 | 1 / 4",
+        "subId": "ID2_12.038"
+      },
+      "2/5 | 2/4": {
+        "vn": "2 / 5 | 2 / 4",
+        "subId": "ID2_12.039"
+      },
+      "2/5 | 2/5": {
+        "vn": "2 / 5 | 2 / 5",
+        "subId": "ID2_12.040"
+      },
+      "2/5 | 3/5": {
+        "vn": "2 / 5 | 3 / 5",
+        "subId": "ID2_12.041"
+      },
+      "2/5 | 3/6": {
+        "vn": "2 / 5 | 3 / 6",
+        "subId": "ID2_12.042"
+      },
+      "2/5 | 4/1": {
+        "vn": "2 / 5 | 4 / 1",
+        "subId": "ID2_12.043"
+      },
+      "2/5 | 4/6": {
+        "vn": "2 / 5 | 4 / 6",
+        "subId": "ID2_12.044"
+      },
+      "2/5 | 5/1": {
+        "vn": "2 / 5 | 5 / 1",
+        "subId": "ID2_12.045"
+      },
+      "2/5 | 5/2": {
+        "vn": "2 / 5 | 5 / 2",
+        "subId": "ID2_12.046"
+      },
+      "2/5 | 6/2": {
+        "vn": "2 / 5 | 6 / 2",
+        "subId": "ID2_12.047"
+      },
+      "2/5 | 6/3": {
+        "vn": "2 / 5 | 6 / 3",
+        "subId": "ID2_12.048"
+      },
+      "3/5 | 1/3": {
+        "vn": "3 / 5 | 1 / 3",
+        "subId": "ID2_12.049"
+      },
+      "3/5 | 1/4": {
+        "vn": "3 / 5 | 1 / 4",
+        "subId": "ID2_12.050"
+      },
+      "3/5 | 2/4": {
+        "vn": "3 / 5 | 2 / 4",
+        "subId": "ID2_12.051"
+      },
+      "3/5 | 2/5": {
+        "vn": "3 / 5 | 2 / 5",
+        "subId": "ID2_12.052"
+      },
+      "3/5 | 3/5": {
+        "vn": "3 / 5 | 3 / 5",
+        "subId": "ID2_12.053"
+      },
+      "3/5 | 3/6": {
+        "vn": "3 / 5 | 3 / 6",
+        "subId": "ID2_12.054"
+      },
+      "3/5 | 4/1": {
+        "vn": "3 / 5 | 4 / 1",
+        "subId": "ID2_12.055"
+      },
+      "3/5 | 4/6": {
+        "vn": "3 / 5 | 4 / 6",
+        "subId": "ID2_12.056"
+      },
+      "3/5 | 5/1": {
+        "vn": "3 / 5 | 5 / 1",
+        "subId": "ID2_12.057"
+      },
+      "3/5 | 5/2": {
+        "vn": "3 / 5 | 5 / 2",
+        "subId": "ID2_12.058"
+      },
+      "3/5 | 6/2": {
+        "vn": "3 / 5 | 6 / 2",
+        "subId": "ID2_12.059"
+      },
+      "3/5 | 6/3": {
+        "vn": "3 / 5 | 6 / 3",
+        "subId": "ID2_12.060"
+      },
+      "3/6 | 1/3": {
+        "vn": "3 / 6 | 1 / 3",
+        "subId": "ID2_12.061"
+      },
+      "3/6 | 1/4": {
+        "vn": "3 / 6 | 1 / 4",
+        "subId": "ID2_12.062"
+      },
+      "3/6 | 2/4": {
+        "vn": "3 / 6 | 2 / 4",
+        "subId": "ID2_12.063"
+      },
+      "3/6 | 2/5": {
+        "vn": "3 / 6 | 2 / 5",
+        "subId": "ID2_12.064"
+      },
+      "3/6 | 3/5": {
+        "vn": "3 / 6 | 3 / 5",
+        "subId": "ID2_12.065"
+      },
+      "3/6 | 3/6": {
+        "vn": "3 / 6 | 3 / 6",
+        "subId": "ID2_12.066"
+      },
+      "3/6 | 4/1": {
+        "vn": "3 / 6 | 4 / 1",
+        "subId": "ID2_12.067"
+      },
+      "3/6 | 4/6": {
+        "vn": "3 / 6 | 4 / 6",
+        "subId": "ID2_12.068"
+      },
+      "3/6 | 5/1": {
+        "vn": "3 / 6 | 5 / 1",
+        "subId": "ID2_12.069"
+      },
+      "3/6 | 5/2": {
+        "vn": "3 / 6 | 5 / 2",
+        "subId": "ID2_12.070"
+      },
+      "3/6 | 6/2": {
+        "vn": "3 / 6 | 6 / 2",
+        "subId": "ID2_12.071"
+      },
+      "3/6 | 6/3": {
+        "vn": "3 / 6 | 6 / 3",
+        "subId": "ID2_12.072"
+      },
+      "4/1 | 1/3": {
+        "vn": "4 / 1 | 1 / 3",
+        "subId": "ID2_12.073"
+      },
+      "4/1 | 1/4": {
+        "vn": "4 / 1 | 1 / 4",
+        "subId": "ID2_12.074"
+      },
+      "4/1 | 2/4": {
+        "vn": "4 / 1 | 2 / 4",
+        "subId": "ID2_12.075"
+      },
+      "4/1 | 2/5": {
+        "vn": "4 / 1 | 2 / 5",
+        "subId": "ID2_12.076"
+      },
+      "4/1 | 3/5": {
+        "vn": "4 / 1 | 3 / 5",
+        "subId": "ID2_12.077"
+      },
+      "4/1 | 3/6": {
+        "vn": "4 / 1 | 3 / 6",
+        "subId": "ID2_12.078"
+      },
+      "4/1 | 4/1": {
+        "vn": "4 / 1 | 4 / 1",
+        "subId": "ID2_12.079"
+      },
+      "4/1 | 4/6": {
+        "vn": "4 / 1 | 4 / 6",
+        "subId": "ID2_12.080"
+      },
+      "4/1 | 5/1": {
+        "vn": "4 / 1 | 5 / 1",
+        "subId": "ID2_12.081"
+      },
+      "4/1 | 5/2": {
+        "vn": "4 / 1 | 5 / 2",
+        "subId": "ID2_12.082"
+      },
+      "4/1 | 6/2": {
+        "vn": "4 / 1 | 6 / 2",
+        "subId": "ID2_12.083"
+      },
+      "4/1 | 6/3": {
+        "vn": "4 / 1 | 6 / 3",
+        "subId": "ID2_12.084"
+      },
+      "4/6 | 1/3": {
+        "vn": "4 / 6 | 1 / 3",
+        "subId": "ID2_12.085"
+      },
+      "4/6 | 1/4": {
+        "vn": "4 / 6 | 1 / 4",
+        "subId": "ID2_12.086"
+      },
+      "4/6 | 2/4": {
+        "vn": "4 / 6 | 2 / 4",
+        "subId": "ID2_12.087"
+      },
+      "4/6 | 2/5": {
+        "vn": "4 / 6 | 2 / 5",
+        "subId": "ID2_12.088"
+      },
+      "4/6 | 3/5": {
+        "vn": "4 / 6 | 3 / 5",
+        "subId": "ID2_12.089"
+      },
+      "4/6 | 3/6": {
+        "vn": "4 / 6 | 3 / 6",
+        "subId": "ID2_12.090"
+      },
+      "4/6 | 4/1": {
+        "vn": "4 / 6 | 4 / 1",
+        "subId": "ID2_12.091"
+      },
+      "4/6 | 4/6": {
+        "vn": "4 / 6 | 4 / 6",
+        "subId": "ID2_12.092"
+      },
+      "4/6 | 5/1": {
+        "vn": "4 / 6 | 5 / 1",
+        "subId": "ID2_12.093"
+      },
+      "4/6 | 5/2": {
+        "vn": "4 / 6 | 5 / 2",
+        "subId": "ID2_12.094"
+      },
+      "4/6 | 6/2": {
+        "vn": "4 / 6 | 6 / 2",
+        "subId": "ID2_12.095"
+      },
+      "4/6 | 6/3": {
+        "vn": "4 / 6 | 6 / 3",
+        "subId": "ID2_12.096"
+      },
+      "5/1 | 1/3": {
+        "vn": "5 / 1 | 1 / 3",
+        "subId": "ID2_12.097"
+      },
+      "5/1 | 1/4": {
+        "vn": "5 / 1 | 1 / 4",
+        "subId": "ID2_12.098"
+      },
+      "5/1 | 2/4": {
+        "vn": "5 / 1 | 2 / 4",
+        "subId": "ID2_12.099"
+      },
+      "5/1 | 2/5": {
+        "vn": "5 / 1 | 2 / 5",
+        "subId": "ID2_12.100"
+      },
+      "5/1 | 3/5": {
+        "vn": "5 / 1 | 3 / 5",
+        "subId": "ID2_12.101"
+      },
+      "5/1 | 3/6": {
+        "vn": "5 / 1 | 3 / 6",
+        "subId": "ID2_12.102"
+      },
+      "5/1 | 4/1": {
+        "vn": "5 / 1 | 4 / 1",
+        "subId": "ID2_12.103"
+      },
+      "5/1 | 4/6": {
+        "vn": "5 / 1 | 4 / 6",
+        "subId": "ID2_12.104"
+      },
+      "5/1 | 5/1": {
+        "vn": "5 / 1 | 5 / 1",
+        "subId": "ID2_12.105"
+      },
+      "5/1 | 5/2": {
+        "vn": "5 / 1 | 5 / 2",
+        "subId": "ID2_12.106"
+      },
+      "5/1 | 6/2": {
+        "vn": "5 / 1 | 6 / 2",
+        "subId": "ID2_12.107"
+      },
+      "5/1 | 6/3": {
+        "vn": "5 / 1 | 6 / 3",
+        "subId": "ID2_12.108"
+      },
+      "5/2 | 1/3": {
+        "vn": "5 / 2 | 1 / 3",
+        "subId": "ID2_12.109"
+      },
+      "5/2 | 1/4": {
+        "vn": "5 / 2 | 1 / 4",
+        "subId": "ID2_12.110"
+      },
+      "5/2 | 2/4": {
+        "vn": "5 / 2 | 2 / 4",
+        "subId": "ID2_12.111"
+      },
+      "5/2 | 2/5": {
+        "vn": "5 / 2 | 2 / 5",
+        "subId": "ID2_12.112"
+      },
+      "5/2 | 3/5": {
+        "vn": "5 / 2 | 3 / 5",
+        "subId": "ID2_12.113"
+      },
+      "5/2 | 3/6": {
+        "vn": "5 / 2 | 3 / 6",
+        "subId": "ID2_12.114"
+      },
+      "5/2 | 4/1": {
+        "vn": "5 / 2 | 4 / 1",
+        "subId": "ID2_12.115"
+      },
+      "5/2 | 4/6": {
+        "vn": "5 / 2 | 4 / 6",
+        "subId": "ID2_12.116"
+      },
+      "5/2 | 5/1": {
+        "vn": "5 / 2 | 5 / 1",
+        "subId": "ID2_12.117"
+      },
+      "5/2 | 5/2": {
+        "vn": "5 / 2 | 5 / 2",
+        "subId": "ID2_12.118"
+      },
+      "5/2 | 6/2": {
+        "vn": "5 / 2 | 6 / 2",
+        "subId": "ID2_12.119"
+      },
+      "5/2 | 6/3": {
+        "vn": "5 / 2 | 6 / 3",
+        "subId": "ID2_12.120"
+      },
+      "6/2 | 1/3": {
+        "vn": "6 / 2 | 1 / 3",
+        "subId": "ID2_12.121"
+      },
+      "6/2 | 1/4": {
+        "vn": "6 / 2 | 1 / 4",
+        "subId": "ID2_12.122"
+      },
+      "6/2 | 2/4": {
+        "vn": "6 / 2 | 2 / 4",
+        "subId": "ID2_12.123"
+      },
+      "6/2 | 2/5": {
+        "vn": "6 / 2 | 2 / 5",
+        "subId": "ID2_12.124"
+      },
+      "6/2 | 3/5": {
+        "vn": "6 / 2 | 3 / 5",
+        "subId": "ID2_12.125"
+      },
+      "6/2 | 3/6": {
+        "vn": "6 / 2 | 3 / 6",
+        "subId": "ID2_12.126"
+      },
+      "6/2 | 4/1": {
+        "vn": "6 / 2 | 4 / 1",
+        "subId": "ID2_12.127"
+      },
+      "6/2 | 4/6": {
+        "vn": "6 / 2 | 4 / 6",
+        "subId": "ID2_12.128"
+      },
+      "6/2 | 5/1": {
+        "vn": "6 / 2 | 5 / 1",
+        "subId": "ID2_12.129"
+      },
+      "6/2 | 5/2": {
+        "vn": "6 / 2 | 5 / 2",
+        "subId": "ID2_12.130"
+      },
+      "6/2 | 6/2": {
+        "vn": "6 / 2 | 6 / 2",
+        "subId": "ID2_12.131"
+      },
+      "6/2 | 6/3": {
+        "vn": "6 / 2 | 6 / 3",
+        "subId": "ID2_12.132"
+      },
+      "6/3 | 1/3": {
+        "vn": "6 / 3 | 1 / 3",
+        "subId": "ID2_12.133"
+      },
+      "6/3 | 1/4": {
+        "vn": "6 / 3 | 1 / 4",
+        "subId": "ID2_12.134"
+      },
+      "6/3 | 2/4": {
+        "vn": "6 / 3 | 2 / 4",
+        "subId": "ID2_12.135"
+      },
+      "6/3 | 2/5": {
+        "vn": "6 / 3 | 2 / 5",
+        "subId": "ID2_12.136"
+      },
+      "6/3 | 3/5": {
+        "vn": "6 / 3 | 3 / 5",
+        "subId": "ID2_12.137"
+      },
+      "6/3 | 3/6": {
+        "vn": "6 / 3 | 3 / 6",
+        "subId": "ID2_12.138"
+      },
+      "6/3 | 4/1": {
+        "vn": "6 / 3 | 4 / 1",
+        "subId": "ID2_12.139"
+      },
+      "6/3 | 4/6": {
+        "vn": "6 / 3 | 4 / 6",
+        "subId": "ID2_12.140"
+      },
+      "6/3 | 5/1": {
+        "vn": "6 / 3 | 5 / 1",
+        "subId": "ID2_12.141"
+      },
+      "6/3 | 5/2": {
+        "vn": "6 / 3 | 5 / 2",
+        "subId": "ID2_12.142"
+      },
+      "6/3 | 6/2": {
+        "vn": "6 / 3 | 6 / 2",
+        "subId": "ID2_12.143"
+      },
+      "6/3 | 6/3": {
+        "vn": "6 / 3 | 6 / 3",
+        "subId": "ID2_12.144"
+      }
+    }
+  },
+  "Center": {
+    "id": "ID2_13",
+    "nameEN": "Center Connections",
+    "nameVN": "Trung tâm kết nối",
+    "values": {
+      "head center _ Defined _ Defined": {
+        "vn": "Xác định | Xác định",
+        "subId": "ID2_13.001"
+      },
+      "head center _ Open _ Open": {
+        "vn": "Mở | Mở",
+        "subId": "ID2_13.002"
+      },
+      "head center _ Defined _ Open": {
+        "vn": "Xác định | Mở",
+        "subId": "ID2_13.003"
+      },
+      "head center _ Open _ Defined": {
+        "vn": "Mở | Xác định",
+        "subId": "ID2_13.004"
+      },
+      "ajna center _ Defined _ Defined": {
+        "vn": "Xác định | Xác định",
+        "subId": "ID2_13.005"
+      },
+      "ajna center _ Open _ Open": {
+        "vn": "Mở | Mở",
+        "subId": "ID2_13.006"
+      },
+      "ajna center _ Defined _ Open": {
+        "vn": "Xác định | Mở",
+        "subId": "ID2_13.007"
+      },
+      "ajna center _ Open _ Defined": {
+        "vn": "Mở | Xác định",
+        "subId": "ID2_13.008"
+      },
+      "throat center _ Defined _ Defined": {
+        "vn": "Xác định | Xác định",
+        "subId": "ID2_13.009"
+      },
+      "throat center _ Open _ Open": {
+        "vn": "Mở | Mở",
+        "subId": "ID2_13.010"
+      },
+      "throat center _ Defined _ Open": {
+        "vn": "Xác định | Mở",
+        "subId": "ID2_13.011"
+      },
+      "throat center _ Open _ Defined": {
+        "vn": "Mở | Xác định",
+        "subId": "ID2_13.012"
+      },
+      "g center _ Defined _ Defined": {
+        "vn": "Xác định | Xác định",
+        "subId": "ID2_13.013"
+      },
+      "g center _ Open _ Open": {
+        "vn": "Mở | Mở",
+        "subId": "ID2_13.014"
+      },
+      "g center _ Defined _ Open": {
+        "vn": "Xác định | Mở",
+        "subId": "ID2_13.015"
+      },
+      "g center _ Open _ Defined": {
+        "vn": "Mở | Xác định",
+        "subId": "ID2_13.016"
+      },
+      "heart center _ Defined _ Defined": {
+        "vn": "Xác định | Xác định",
+        "subId": "ID2_13.017"
+      },
+      "heart center _ Open _ Open": {
+        "vn": "Mở | Mở",
+        "subId": "ID2_13.018"
+      },
+      "heart center _ Defined _ Open": {
+        "vn": "Xác định | Mở",
+        "subId": "ID2_13.019"
+      },
+      "heart center _ Open _ Defined": {
+        "vn": "Mở | Xác định",
+        "subId": "ID2_13.020"
+      },
+      "sacral center _ Defined _ Defined": {
+        "vn": "Xác định | Xác định",
+        "subId": "ID2_13.021"
+      },
+      "sacral center _ Open _ Open": {
+        "vn": "Mở | Mở",
+        "subId": "ID2_13.022"
+      },
+      "sacral center _ Defined _ Open": {
+        "vn": "Xác định | Mở",
+        "subId": "ID2_13.023"
+      },
+      "sacral center _ Open _ Defined": {
+        "vn": "Mở | Xác định",
+        "subId": "ID2_13.024"
+      },
+      "splenic center _ Defined _ Defined": {
+        "vn": "Xác định | Xác định",
+        "subId": "ID2_13.025"
+      },
+      "splenic center _ Open _ Open": {
+        "vn": "Mở | Mở",
+        "subId": "ID2_13.026"
+      },
+      "splenic center _ Defined _ Open": {
+        "vn": "Xác định | Mở",
+        "subId": "ID2_13.027"
+      },
+      "splenic center _ Open _ Defined": {
+        "vn": "Mở | Xác định",
+        "subId": "ID2_13.028"
+      },
+      "solar plexus center _ Defined _ Defined": {
+        "vn": "Xác định | Xác định",
+        "subId": "ID2_13.029"
+      },
+      "solar plexus center _ Open _ Open": {
+        "vn": "Mở | Mở",
+        "subId": "ID2_13.030"
+      },
+      "solar plexus center _ Defined _ Open": {
+        "vn": "Xác định | Mở",
+        "subId": "ID2_13.031"
+      },
+      "solar plexus center _ Open _ Defined": {
+        "vn": "Mở | Xác định",
+        "subId": "ID2_13.032"
+      },
+      "root center _ Defined _ Defined": {
+        "vn": "Xác định | Xác định",
+        "subId": "ID2_13.033"
+      },
+      "root center _ Open _ Open": {
+        "vn": "Mở | Mở",
+        "subId": "ID2_13.034"
+      },
+      "root center _ Defined _ Open": {
+        "vn": "Xác định | Mở",
+        "subId": "ID2_13.035"
+      },
+      "root center _ Open _ Defined": {
+        "vn": "Mở | Xác định",
+        "subId": "ID2_13.036"
+      }
+    }
+  }
+}

@@ -519,7 +519,7 @@ export default function HdResultPage() {
       <div className={`pointer-events-none absolute inset-x-0 top-0 h-72 bg-linear-to-b ${col.from}/15 to-transparent`} />
       <div className={`pointer-events-none absolute inset-x-0 bottom-0 h-48 bg-linear-to-t ${col.to}/8 to-transparent`} />
 
-      <div className="relative w-full max-w-5xl space-y-8">
+      <div className="relative mx-auto w-full max-w-7xl px-4 py-16 sm:py-20 space-y-8">
 
         {/* ── back ── */}
         <button

@@ -1,0 +1,1466 @@
+{
+  "Type": {
+    "id": "ID_01",
+    "nameEN": "Type",
+    "nameVN": "Nhân dạng",
+    "values": {
+      "Manifestor": {
+        "vn": "Khởi xướng",
+        "subId": "ID_01.001"
+      },
+      "Generator": {
+        "vn": "Vận hành",
+        "subId": "ID_01.002"
+      },
+      "Manifesting Generator": {
+        "vn": "Khởi xướng Vận hành",
+        "subId": "ID_01.003"
+      },
+      "Projector": {
+        "vn": "Khai vấn",
+        "subId": "ID_01.004"
+      },
+      "Reflector": {
+        "vn": "Phản chiếu",
+        "subId": "ID_01.005"
+      }
+    }
+  },
+  "Strategy": {
+    "id": "ID_02",
+    "nameEN": "Strategy",
+    "nameVN": "Chiến lược",
+    "values": {
+      "To Respond": {
+        "vn": "Chờ phản hồi",
+        "subId": "ID_02.001"
+      },
+      "To Inform": {
+        "vn": "Thông báo",
+        "subId": "ID_02.002"
+      },
+      "Wait for the Invitation": {
+        "vn": "Chờ lời mời",
+        "subId": "ID_02.003"
+      },
+      "Wait a Lunar Cycle": {
+        "vn": "Chờ chu kỳ",
+        "subId": "ID_02.004"
+      }
+    }
+  },
+  "InnerAuthority": {
+    "id": "ID_03",
+    "nameEN": "InnerAuthority",
+    "nameVN": "Quyền năng",
+    "values": {
+      "Emotional": {
+        "vn": "Cảm xúc",
+        "subId": "ID_03.001"
+      },
+      "Sacral": {
+        "vn": "Sinh lực",
+        "subId": "ID_03.002"
+      },
+      "Splenic": {
+        "vn": "Trực giác",
+        "subId": "ID_03.003"
+      },
+      "Ego Manifested": {
+        "vn": "Bản ngã (M)",
+        "subId": "ID_03.004"
+      },
+      "Self Projected": {
+        "vn": "Danh tính",
+        "subId": "ID_03.005"
+      },
+      "Ego Projected": {
+        "vn": "Bản ngã (P)",
+        "subId": "ID_03.006"
+      },
+      "Mental": {
+        "vn": "Nhận thức",
+        "subId": "ID_03.007"
+      },
+      "Lunar": {
+        "vn": "Chu kỳ",
+        "subId": "ID_03.008"
+      }
+    }
+  },
+  "Signature": {
+    "id": "ID_04",
+    "nameEN": "Signature",
+    "nameVN": "Trạng thái tích cực",
+    "values": {
+      "Satisfaction": {
+        "vn": "Thỏa mãn",
+        "subId": "ID_04.001"
+      },
+      "Peace": {
+        "vn": "Bình an",
+        "subId": "ID_04.002"
+      },
+      "Success": {
+        "vn": "Thành công",
+        "subId": "ID_04.003"
+      },
+      "Surprise": {
+        "vn": "Ngạc nhiên",
+        "subId": "ID_04.004"
+      }
+    }
+  },
+  "NotSelfTheme": {
+    "id": "ID_05",
+    "nameEN": "NotSelfTheme",
+    "nameVN": "Trạng thái tiêu cực",
+    "values": {
+      "Frustration": {
+        "vn": "Bực bội",
+        "subId": "ID_05.001"
+      },
+      "Anger": {
+        "vn": "Tức giận",
+        "subId": "ID_05.002"
+      },
+      "Bitterness": {
+        "vn": "Cay đắng",
+        "subId": "ID_05.003"
+      },
+      "Disappointment": {
+        "vn": "Thất vọng",
+        "subId": "ID_05.004"
+      }
+    }
+  },
+  "Definition": {
+    "id": "ID_06",
+    "nameEN": "Definition",
+    "nameVN": "Phương thức liên kết",
+    "values": {
+      "No Definition": {
+        "vn": "Không liên kết",
+        "subId": "ID_06.001"
+      },
+      "Single Definition": {
+        "vn": "Liên kết đơn",
+        "subId": "ID_06.002"
+      },
+      "Split Definition": {
+        "vn": "Liên kết đôi",
+        "subId": "ID_06.003"
+      },
+      "Triple Split Definition": {
+        "vn": "Liên kết ba",
+        "subId": "ID_06.004"
+      },
+      "Quadruple Split Definition": {
+        "vn": "Liên kết bốn",
+        "subId": "ID_06.005"
+      }
+    }
+  },
+  "OpenCenters": {
+    "id": "ID_07",
+    "nameEN": "OpenCenters",
+    "nameVN": "Trung tâm mở",
+    "values": {
+      "Head": {
+        "vn": "Cảm hứng",
+        "subId": "ID_07.001"
+      },
+      "Ajna": {
+        "vn": "Nhận thức",
+        "subId": "ID_07.002"
+      },
+      "Throat": {
+        "vn": "Biểu đạt",
+        "subId": "ID_07.003"
+      },
+      "G": {
+        "vn": "Danh tính",
+        "subId": "ID_07.004"
+      },
+      "Heart": {
+        "vn": "Bản ngã",
+        "subId": "ID_07.005"
+      },
+      "Sacral": {
+        "vn": "Sinh lực",
+        "subId": "ID_07.006"
+      },
+      "Splenic": {
+        "vn": "Trực giác",
+        "subId": "ID_07.007"
+      },
+      "Solar Plexus": {
+        "vn": "Cảm xúc",
+        "subId": "ID_07.008"
+      },
+      "Root": {
+        "vn": "Động lực",
+        "subId": "ID_07.009"
+      }
+    }
+  },
+  "DefinedCenters": {
+    "id": "ID_08",
+    "nameEN": "DefinedCenters",
+    "nameVN": "Trung tâm xác định",
+    "values": {
+      "Head": {
+        "vn": "Cảm hứng",
+        "subId": "ID_08.001"
+      },
+      "Ajna": {
+        "vn": "Nhận thức",
+        "subId": "ID_08.002"
+      },
+      "Throat": {
+        "vn": "Biểu đạt",
+        "subId": "ID_08.003"
+      },
+      "G": {
+        "vn": "Danh tính",
+        "subId": "ID_08.004"
+      },
+      "Heart": {
+        "vn": "Bản ngã",
+        "subId": "ID_08.005"
+      },
+      "Sacral": {
+        "vn": "Sinh lực",
+        "subId": "ID_08.006"
+      },
+      "Splenic": {
+        "vn": "Trực giác",
+        "subId": "ID_08.007"
+      },
+      "Solar Plexus": {
+        "vn": "Cảm xúc",
+        "subId": "ID_08.008"
+      },
+      "Root": {
+        "vn": "Động lực",
+        "subId": "ID_08.009"
+      }
+    }
+  },
+  "Digestion": {
+    "id": "ID_09",
+    "nameEN": "Digestion",
+    "nameVN": "Hấp thu",
+    "values": {
+      "Alternating": {
+        "vn": "Luân phiên",
+        "subId": "ID_09.001"
+      },
+      "Closed": {
+        "vn": "Khép kín",
+        "subId": "ID_09.002"
+      },
+      "Cold": {
+        "vn": "Lạnh",
+        "subId": "ID_09.003"
+      },
+      "Nervous": {
+        "vn": "Nhạy",
+        "subId": "ID_09.004"
+      },
+      "Low": {
+        "vn": "Thấp",
+        "subId": "ID_09.005"
+      },
+      "InDirect": {
+        "vn": "Gián tiếp",
+        "subId": "ID_09.006"
+      },
+      "Consecutive": {
+        "vn": "Tuần tự",
+        "subId": "ID_09.007"
+      },
+      "Open": {
+        "vn": "Mở",
+        "subId": "ID_09.008"
+      },
+      "Hot": {
+        "vn": "Nóng",
+        "subId": "ID_09.009"
+      },
+      "Calm": {
+        "vn": "Tĩnh",
+        "subId": "ID_09.010"
+      },
+      "High": {
+        "vn": "Cao",
+        "subId": "ID_09.011"
+      },
+      "Direct": {
+        "vn": "Trực tiếp",
+        "subId": "ID_09.012"
+      }
+    }
+  },
+  "Environment": {
+    "id": "ID_10",
+    "nameEN": "Environment",
+    "nameVN": "Môi trường",
+    "values": {
+      "Caves": {
+        "vn": "Ít người",
+        "subId": "ID_10.001"
+      },
+      "Markets": {
+        "vn": "Đông người",
+        "subId": "ID_10.002"
+      },
+      "Kitchens": {
+        "vn": "Ấm cúng",
+        "subId": "ID_10.003"
+      },
+      "Mountains": {
+        "vn": "Cao",
+        "subId": "ID_10.004"
+      },
+      "Valleys": {
+        "vn": "Thung lũng",
+        "subId": "ID_10.005"
+      },
+      "Shores": {
+        "vn": "Bờ biển",
+        "subId": "ID_10.006"
+      }
+    }
+  },
+  "Perspective": {
+    "id": "ID_11",
+    "nameEN": "Perspective",
+    "nameVN": "Quan điểm",
+    "values": {
+      "Survival": {
+        "vn": "Sinh tồn",
+        "subId": "ID_11.001"
+      },
+      "Possibility": {
+        "vn": "Khả năng",
+        "subId": "ID_11.002"
+      },
+      "Power": {
+        "vn": "Quyền lực",
+        "subId": "ID_11.003"
+      },
+      "Wanting": {
+        "vn": "Mong muốn",
+        "subId": "ID_11.004"
+      },
+      "Probability": {
+        "vn": "Xác suất",
+        "subId": "ID_11.005"
+      },
+      "Personal": {
+        "vn": "Cá nhân",
+        "subId": "ID_11.006"
+      }
+    }
+  },
+  "Motivation": {
+    "id": "ID_12",
+    "nameEN": "Motivation",
+    "nameVN": "Động lực",
+    "values": {
+      "Fear": {
+        "vn": "Sợ hãi",
+        "subId": "ID_12.001"
+      },
+      "Hope": {
+        "vn": "Hy vọng",
+        "subId": "ID_12.002"
+      },
+      "Desire": {
+        "vn": "Khao khát",
+        "subId": "ID_12.003"
+      },
+      "Need": {
+        "vn": "Nhu cầu",
+        "subId": "ID_12.004"
+      },
+      "Guilt": {
+        "vn": "Tội lỗi",
+        "subId": "ID_12.005"
+      },
+      "Innocence": {
+        "vn": "Ngây thơ",
+        "subId": "ID_12.006"
+      }
+    }
+  },
+  "Sense": {
+    "id": "ID_13",
+    "nameEN": "Sense",
+    "nameVN": "Giác quan nhận thức",
+    "values": {
+      "Security": {
+        "vn": "An toàn",
+        "subId": "ID_13.001"
+      },
+      "Uncertainty": {
+        "vn": "Bất định",
+        "subId": "ID_13.002"
+      },
+      "Action": {
+        "vn": "Hành động",
+        "subId": "ID_13.003"
+      },
+      "Meditation": {
+        "vn": "Thiền định",
+        "subId": "ID_13.004"
+      },
+      "Judgment": {
+        "vn": "Phán đoán",
+        "subId": "ID_13.005"
+      },
+      "Acceptance": {
+        "vn": "Chấp nhận",
+        "subId": "ID_13.006"
+      }
+    }
+  },
+  "DesignSense": {
+    "id": "ID_14",
+    "nameEN": "DesignSense",
+    "nameVN": "Giác quan cơ thể",
+    "values": {
+      "Smell": {
+        "vn": "Khứu giác",
+        "subId": "ID_14.001"
+      },
+      "Taste": {
+        "vn": "Vị giác",
+        "subId": "ID_14.002"
+      },
+      "Outer Vision": {
+        "vn": "Quan sát",
+        "subId": "ID_14.003"
+      },
+      "Inner Vision": {
+        "vn": "Tưởng tượng",
+        "subId": "ID_14.004"
+      },
+      "Feeling": {
+        "vn": "Cảm nhận",
+        "subId": "ID_14.005"
+      },
+      "Touch": {
+        "vn": "Xúc giác",
+        "subId": "ID_14.006"
+      }
+    }
+  },
+  "Profile": {
+    "id": "ID_15",
+    "nameEN": "Profile",
+    "nameVN": "Hồ sơ tính cách",
+    "values": {
+      "1 / 3": {
+        "vn": "1 - 3 | Nghiên cứu - Trải nghiệm",
+        "subId": "ID_15.001"
+      },
+      "1 / 4": {
+        "vn": "1 - 4 | Nghiên cứu - Kết nối",
+        "subId": "ID_15.002"
+      },
+      "2 / 4": {
+        "vn": "2 - 4 | Ẩn sĩ - Kết nối",
+        "subId": "ID_15.003"
+      },
+      "2 / 5": {
+        "vn": "2 - 5 | Ẩn sĩ - Dẫn đường",
+        "subId": "ID_15.004"
+      },
+      "3 / 5": {
+        "vn": "3 - 5 | Trải nghiệm - Dẫn đường",
+        "subId": "ID_15.005"
+      },
+      "3 / 6": {
+        "vn": "3 - 6 | Trải nghiệm - Hình mẫu",
+        "subId": "ID_15.006"
+      },
+      "4 / 1": {
+        "vn": "4 - 1 | Kết nối - Nghiên cứu",
+        "subId": "ID_15.007"
+      },
+      "4 / 6": {
+        "vn": "4 - 6 | Kết nối - Hình mẫu",
+        "subId": "ID_15.008"
+      },
+      "5 / 1": {
+        "vn": "5 - 1 | Dẫn đường - Nghiên cứu",
+        "subId": "ID_15.009"
+      },
+      "5 / 2": {
+        "vn": "5 - 2 | Dẫn đường - Ẩn sĩ",
+        "subId": "ID_15.010"
+      },
+      "6 / 2": {
+        "vn": "6 - 2 | Hình mẫu - Ẩn sĩ",
+        "subId": "ID_15.011"
+      },
+      "6 / 3": {
+        "vn": "6 - 3 | Hình mẫu - Trải nghiệm",
+        "subId": "ID_15.012"
+      }
+    }
+  },
+  "Gates": {
+    "id": "ID_16",
+    "nameEN": "Gates",
+    "nameVN": "Cổng kết nối",
+    "values": {
+      "1": { "vn": "1", "subId": "ID_16.001" },
+      "2": { "vn": "2", "subId": "ID_16.002" },
+      "3": { "vn": "3", "subId": "ID_16.003" },
+      "4": { "vn": "4", "subId": "ID_16.004" },
+      "5": { "vn": "5", "subId": "ID_16.005" },
+      "6": { "vn": "6", "subId": "ID_16.006" },
+      "7": { "vn": "7", "subId": "ID_16.007" },
+      "8": { "vn": "8", "subId": "ID_16.008" },
+      "9": { "vn": "9", "subId": "ID_16.009" },
+      "10": { "vn": "10", "subId": "ID_16.010" },
+      "11": { "vn": "11", "subId": "ID_16.011" },
+      "12": { "vn": "12", "subId": "ID_16.012" },
+      "13": { "vn": "13", "subId": "ID_16.013" },
+      "14": { "vn": "14", "subId": "ID_16.014" },
+      "15": { "vn": "15", "subId": "ID_16.015" },
+      "16": { "vn": "16", "subId": "ID_16.016" },
+      "17": { "vn": "17", "subId": "ID_16.017" },
+      "18": { "vn": "18", "subId": "ID_16.018" },
+      "19": { "vn": "19", "subId": "ID_16.019" },
+      "20": { "vn": "20", "subId": "ID_16.020" },
+      "21": { "vn": "21", "subId": "ID_16.021" },
+      "22": { "vn": "22", "subId": "ID_16.022" },
+      "23": { "vn": "23", "subId": "ID_16.023" },
+      "24": { "vn": "24", "subId": "ID_16.024" },
+      "25": { "vn": "25", "subId": "ID_16.025" },
+      "26": { "vn": "26", "subId": "ID_16.026" },
+      "27": { "vn": "27", "subId": "ID_16.027" },
+      "28": { "vn": "28", "subId": "ID_16.028" },
+      "29": { "vn": "29", "subId": "ID_16.029" },
+      "30": { "vn": "30", "subId": "ID_16.030" },
+      "31": { "vn": "31", "subId": "ID_16.031" },
+      "32": { "vn": "32", "subId": "ID_16.032" },
+      "33": { "vn": "33", "subId": "ID_16.033" },
+      "34": { "vn": "34", "subId": "ID_16.034" },
+      "35": { "vn": "35", "subId": "ID_16.035" },
+      "36": { "vn": "36", "subId": "ID_16.036" },
+      "37": { "vn": "37", "subId": "ID_16.037" },
+      "38": { "vn": "38", "subId": "ID_16.038" },
+      "39": { "vn": "39", "subId": "ID_16.039" },
+      "40": { "vn": "40", "subId": "ID_16.040" },
+      "41": { "vn": "41", "subId": "ID_16.041" },
+      "42": { "vn": "42", "subId": "ID_16.042" },
+      "43": { "vn": "43", "subId": "ID_16.043" },
+      "44": { "vn": "44", "subId": "ID_16.044" },
+      "45": { "vn": "45", "subId": "ID_16.045" },
+      "46": { "vn": "46", "subId": "ID_16.046" },
+      "47": { "vn": "47", "subId": "ID_16.047" },
+      "48": { "vn": "48", "subId": "ID_16.048" },
+      "49": { "vn": "49", "subId": "ID_16.049" },
+      "50": { "vn": "50", "subId": "ID_16.050" },
+      "51": { "vn": "51", "subId": "ID_16.051" },
+      "52": { "vn": "52", "subId": "ID_16.052" },
+      "53": { "vn": "53", "subId": "ID_16.053" },
+      "54": { "vn": "54", "subId": "ID_16.054" },
+      "55": { "vn": "55", "subId": "ID_16.055" },
+      "56": { "vn": "56", "subId": "ID_16.056" },
+      "57": { "vn": "57", "subId": "ID_16.057" },
+      "58": { "vn": "58", "subId": "ID_16.058" },
+      "59": { "vn": "59", "subId": "ID_16.059" },
+      "60": { "vn": "60", "subId": "ID_16.060" },
+      "61": { "vn": "61", "subId": "ID_16.061" },
+      "62": { "vn": "62", "subId": "ID_16.062" },
+      "63": { "vn": "63", "subId": "ID_16.063" },
+      "64": { "vn": "64", "subId": "ID_16.064" }
+    }
+  },
+  "Channels": {
+    "id": "ID_17",
+    "nameEN": "Channels",
+    "nameVN": "Kênh kết nối",
+    "values": {
+      "1-8": { "vn": "1-8", "subId": "ID_17.001" },
+      "2-14": { "vn": "2-14", "subId": "ID_17.002" },
+      "3-60": { "vn": "3-60", "subId": "ID_17.003" },
+      "4-63": { "vn": "4-63", "subId": "ID_17.004" },
+      "5-15": { "vn": "5-15", "subId": "ID_17.005" },
+      "6-59": { "vn": "6-59", "subId": "ID_17.006" },
+      "7-31": { "vn": "7-31", "subId": "ID_17.007" },
+      "9-52": { "vn": "9-52", "subId": "ID_17.008" },
+      "10-20": { "vn": "10-20", "subId": "ID_17.009" },
+      "10-34": { "vn": "10-34", "subId": "ID_17.010" },
+      "10-57": { "vn": "10-57", "subId": "ID_17.011" },
+      "11-56": { "vn": "11-56", "subId": "ID_17.012" },
+      "12-22": { "vn": "12-22", "subId": "ID_17.013" },
+      "13-33": { "vn": "13-33", "subId": "ID_17.014" },
+      "16-48": { "vn": "16-48", "subId": "ID_17.015" },
+      "17-62": { "vn": "17-62", "subId": "ID_17.016" },
+      "18-58": { "vn": "18-58", "subId": "ID_17.017" },
+      "19-49": { "vn": "19-49", "subId": "ID_17.018" },
+      "20-34": { "vn": "20-34", "subId": "ID_17.019" },
+      "20-57": { "vn": "20-57", "subId": "ID_17.020" },
+      "21-45": { "vn": "21-45", "subId": "ID_17.021" },
+      "23-43": { "vn": "23-43", "subId": "ID_17.022" },
+      "24-61": { "vn": "24-61", "subId": "ID_17.023" },
+      "25-51": { "vn": "25-51", "subId": "ID_17.024" },
+      "26-44": { "vn": "26-44", "subId": "ID_17.025" },
+      "27-50": { "vn": "27-50", "subId": "ID_17.026" },
+      "28-38": { "vn": "28-38", "subId": "ID_17.027" },
+      "29-46": { "vn": "29-46", "subId": "ID_17.028" },
+      "30-41": { "vn": "30-41", "subId": "ID_17.029" },
+      "32-54": { "vn": "32-54", "subId": "ID_17.030" },
+      "34-57": { "vn": "34-57", "subId": "ID_17.031" },
+      "35-36": { "vn": "35-36", "subId": "ID_17.032" },
+      "37-40": { "vn": "37-40", "subId": "ID_17.033" },
+      "39-55": { "vn": "39-55", "subId": "ID_17.034" },
+      "42-53": { "vn": "42-53", "subId": "ID_17.035" },
+      "47-64": { "vn": "47-64", "subId": "ID_17.036" }
+    }
+  },
+  "IncarnationCross": {
+    "id": "ID_18",
+    "nameEN": "IncarnationCross",
+    "nameVN": "Chữ thập hóa thân",
+    "values": {
+      "Juxtaposition Cross of Beginnings (53/54 | 42/32)": {
+        "vn": "Góc kết nối Khởi đầu (53/54 | 42/32)",
+        "subId": "ID_18.001"
+      },
+      "Juxtaposition Cross of Bargains (37/40 | 5/35)": {
+        "vn": "Góc kết nối Thỏa thuận (37/40 | 5/35)",
+        "subId": "ID_18.002"
+      },
+      "Juxtaposition Cross of Caring (27/28 | 19/33)": {
+        "vn": "Góc kết nối Quan tâm (27/28 | 19/33)",
+        "subId": "ID_18.003"
+      },
+      "Juxtaposition Cross of Behavior (10/15 | 18/17)": {
+        "vn": "Góc kết nối Hành vi (10/15 | 18/17)",
+        "subId": "ID_18.004"
+      },
+      "Juxtaposition Cross of Ambition (54/53 | 32/42)": {
+        "vn": "Góc kết nối Tham vọng (54/53 | 32/42)",
+        "subId": "ID_18.005"
+      },
+      "Juxtaposition Cross of Alertness (44/24 | 7/13)": {
+        "vn": "Góc kết nối Cảnh giác (44/24 | 7/13)",
+        "subId": "ID_18.006"
+      },
+      "Juxtaposition Cross of Assimilation (23/43 | 30/29)": {
+        "vn": "Góc kết nối Đồng hóa (23/43 | 30/29)",
+        "subId": "ID_18.007"
+      },
+      "Juxtaposition Cross of Articulation (12/11 | 25/46)": {
+        "vn": "Góc kết nối Diễn đạt (12/11 | 25/46)",
+        "subId": "ID_18.008"
+      },
+      "Juxtaposition Cross of Completion (42/32 | 60/56)": {
+        "vn": "Góc kết nối Hoàn tất (42/32 | 60/56)",
+        "subId": "ID_18.009"
+      },
+      "Juxtaposition Cross of Commitment (29/30 | 20/34)": {
+        "vn": "Góc kết nối Cam kết (29/30 | 20/34)",
+        "subId": "ID_18.010"
+      },
+      "Juxtaposition Cross of Mutation (3/50 | 41/31)": {
+        "vn": "Góc kết nối Đột biến (3/50 | 41/31)",
+        "subId": "ID_18.011"
+      },
+      "Juxtaposition Cross of Moods (55/59 | 9/16)": {
+        "vn": "Góc kết nối Tâm trạng (55/59 | 9/16)",
+        "subId": "ID_18.012"
+      },
+      "Juxtaposition Cross of The Now (20/34 | 37/40)": {
+        "vn": "Góc kết nối Hiện tại (20/34 | 37/40)",
+        "subId": "ID_18.013"
+      },
+      "Juxtaposition Cross of Need (19/33 | 1/2)": {
+        "vn": "Góc kết nối Nhu cầu (19/33 | 1/2)",
+        "subId": "ID_18.014"
+      },
+      "Juxtaposition Cross of Opposition (38/39 | 57/51)": {
+        "vn": "Góc kết nối Đối kháng (38/39 | 57/51)",
+        "subId": "ID_18.015"
+      },
+      "Juxtaposition Cross of Opinions (17/18 | 38/39)": {
+        "vn": "Góc kết nối Quan điểm (17/18 | 38/39)",
+        "subId": "ID_18.016"
+      },
+      "Juxtaposition Cross of Possession (45/26 | 36/6)": {
+        "vn": "Góc kết nối Sở hữu (45/26 | 36/6)",
+        "subId": "ID_18.017"
+      },
+      "Juxtaposition Cross of Oppression (47/22 | 12/11)": {
+        "vn": "Góc kết nối Áp bức (47/22 | 12/11)",
+        "subId": "ID_18.018"
+      },
+      "Juxtaposition Cross of Principles (49/4 | 14/8)": {
+        "vn": "Góc kết nối Nguyên tắc (49/4 | 14/8)",
+        "subId": "ID_18.019"
+      },
+      "Juxtaposition Cross of Power (34/20 | 40/37)": {
+        "vn": "Góc kết nối Quyền lực (34/20 | 40/37)",
+        "subId": "ID_18.020"
+      },
+      "Juxtaposition Cross of Provocation (39/38 | 51/57)": {
+        "vn": "Góc kết nối Khiêu khích (39/38 | 51/57)",
+        "subId": "ID_18.021"
+      },
+      "Juxtaposition Cross of Rationalization (24/44 | 13/7)": {
+        "vn": "Góc kết nối Lý giải (24/44 | 13/7)",
+        "subId": "ID_18.022"
+      },
+      "Juxtaposition Cross of Retreat (33/19 | 2/1)": {
+        "vn": "Góc kết nối Rút lui (33/19 | 2/1)",
+        "subId": "ID_18.023"
+      },
+      "Juxtaposition Cross of Risks (28/27 | 33/19)": {
+        "vn": "Góc kết nối Mạo hiểm (28/27 | 33/19)",
+        "subId": "ID_18.024"
+      },
+      "Juxtaposition Cross of Self-expression (1/2 | 4/49)": {
+        "vn": "Góc kết nối Tự biểu đạt (1/2 | 4/49)",
+        "subId": "ID_18.025"
+      },
+      "Juxtaposition Cross of Serendipity (46/25 | 52/58)": {
+        "vn": "Góc kết nối May mắn (46/25 | 52/58)",
+        "subId": "ID_18.026"
+      },
+      "Juxtaposition Cross of Shock (51/57 | 61/62)": {
+        "vn": "Góc kết nối Chấn động (51/57 | 61/62)",
+        "subId": "ID_18.027"
+      },
+      "Juxtaposition Cross of Stillness (52/58 | 21/48)": {
+        "vn": "Góc kết nối Tĩnh lặng (52/58 | 21/48)",
+        "subId": "ID_18.028"
+      },
+      "Juxtaposition Cross of Stimulation (56/60 | 27/28)": {
+        "vn": "Góc kết nối Kích thích (56/60 | 27/28)",
+        "subId": "ID_18.029"
+      },
+      "Juxtaposition Cross of Strategy (59/55 | 16/9)": {
+        "vn": "Góc kết nối Chiến lược (59/55 | 16/9)",
+        "subId": "ID_18.030"
+      },
+      "Juxtaposition Cross of Vitality (58/52 | 48/21)": {
+        "vn": "Góc kết nối Sinh lực (58/52 | 48/21)",
+        "subId": "ID_18.031"
+      },
+      "Juxtaposition Cross of Values (50/3 | 31/41)": {
+        "vn": "Góc kết nối Giá trị (50/3 | 31/41)",
+        "subId": "ID_18.032"
+      },
+      "Juxtaposition Cross of The Trickster (26/45 | 6/36)": {
+        "vn": "Góc kết nối Kẻ láu cá (26/45 | 6/36)",
+        "subId": "ID_18.033"
+      },
+      "Juxtaposition Cross of Thinking (61/62 | 50/3)": {
+        "vn": "Góc kết nối Tư duy (61/62 | 50/3)",
+        "subId": "ID_18.034"
+      },
+      "Left Angle Cross of The Alpha (41/31 | 44/24)": {
+        "vn": "Góc trái Lãnh đạo (41/31 | 44/24)",
+        "subId": "ID_18.035"
+      },
+      "Left Angle Cross of The Alpha (31/41 | 24/44)": {
+        "vn": "Góc trái Lãnh đạo (31/41 | 24/44)",
+        "subId": "ID_18.036"
+      },
+      "Left Angle Cross of Alignment (28/27 | 33/19)": {
+        "vn": "Góc trái Cân chỉnh (28/27 | 33/19)",
+        "subId": "ID_18.037"
+      },
+      "Left Angle Cross of Alignment (27/28 | 19/33)": {
+        "vn": "Góc trái Cân chỉnh (27/28 | 19/33)",
+        "subId": "ID_18.038"
+      },
+      "Left Angle Cross of The Clarion (57/51 | 62/61)": {
+        "vn": "Góc trái Hiệu triệu (57/51 | 62/61)",
+        "subId": "ID_18.039"
+      },
+      "Left Angle Cross of The Clarion (51/57 | 61/62)": {
+        "vn": "Góc trái Hiệu triệu (51/57 | 61/62)",
+        "subId": "ID_18.040"
+      },
+      "Left Angle Cross of Cycles (53/54 | 42/32)": {
+        "vn": "Góc trái Chu kỳ (53/54 | 42/32)",
+        "subId": "ID_18.041"
+      },
+      "Left Angle Cross of Cycles (54/53 | 32/42)": {
+        "vn": "Góc trái Chu kỳ (54/53 | 32/42)",
+        "subId": "ID_18.042"
+      },
+      "Left Angle Cross of Confrontation (45/26 | 36/6)": {
+        "vn": "Góc trái Đối đầu (45/26 | 36/6)",
+        "subId": "ID_18.043"
+      },
+      "Left Angle Cross of Confrontation (26/45 | 6/36)": {
+        "vn": "Góc trái Đối đầu (26/45 | 6/36)",
+        "subId": "ID_18.044"
+      },
+      "Left Angle Cross of Defiance (2/1 | 49/4)": {
+        "vn": "Góc trái Thách thức (2/1 | 49/4)",
+        "subId": "ID_18.045"
+      },
+      "Left Angle Cross of Defiance (1/2 | 4/49)": {
+        "vn": "Góc trái Thách thức (1/2 | 4/49)",
+        "subId": "ID_18.046"
+      },
+      "Left Angle Cross of Dedication (23/43 | 30/29)": {
+        "vn": "Góc trái Cống hiến (23/43 | 30/29)",
+        "subId": "ID_18.047"
+      },
+      "Left Angle Cross of Dedication (43/23 | 29/30)": {
+        "vn": "Góc trái Cống hiến (43/23 | 29/30)",
+        "subId": "ID_18.048"
+      },
+      "Left Angle Cross of Demands (52/58 | 21/48)": {
+        "vn": "Góc trái Yêu cầu (52/58 | 21/48)",
+        "subId": "ID_18.049"
+      },
+      "Left Angle Cross of Demands (58/52 | 48/21)": {
+        "vn": "Góc trái Yêu cầu (58/52 | 48/21)",
+        "subId": "ID_18.050"
+      },
+      "Juxtaposition Cross of Control (21/48 | 54/53)": {
+        "vn": "Góc kết nối Kiểm soát (21/48 | 54/53)",
+        "subId": "ID_18.051"
+      },
+      "Juxtaposition Cross of Correction (18/17 | 39/38)": {
+        "vn": "Góc kết nối Sửa sai (18/17 | 39/38)",
+        "subId": "ID_18.052"
+      },
+      "Juxtaposition Cross of Crisis (36/6 | 10/15)": {
+        "vn": "Góc kết nối Khủng hoảng (36/6 | 10/15)",
+        "subId": "ID_18.053"
+      },
+      "Juxtaposition Cross of Denial (40/37 | 35/5)": {
+        "vn": "Góc kết nối Phủ nhận (40/37 | 35/5)",
+        "subId": "ID_18.054"
+      },
+      "Juxtaposition Cross of Conflict (6/36 | 15/10)": {
+        "vn": "Góc kết nối Xung đột (6/36 | 15/10)",
+        "subId": "ID_18.055"
+      },
+      "Juxtaposition Cross of Confusion (64/63 | 45/26)": {
+        "vn": "Góc kết nối Bối rối (64/63 | 45/26)",
+        "subId": "ID_18.056"
+      },
+      "Juxtaposition Cross of Conservation (32/42 | 56/60)": {
+        "vn": "Góc kết nối Bảo tồn (32/42 | 56/60)",
+        "subId": "ID_18.057"
+      },
+      "Juxtaposition Cross of Contribution (8/14 | 55/59)": {
+        "vn": "Góc kết nối Đóng góp (8/14 | 55/59)",
+        "subId": "ID_18.058"
+      },
+      "Juxtaposition Cross of Depth (48/21 | 53/54)": {
+        "vn": "Góc kết nối Chiều sâu (48/21 | 53/54)",
+        "subId": "ID_18.059"
+      },
+      "Juxtaposition Cross of Detail (62/61 | 3/50)": {
+        "vn": "Góc kết nối Chi tiết (62/61 | 3/50)",
+        "subId": "ID_18.060"
+      },
+      "Juxtaposition Cross of Fates (30/29 | 34/20)": {
+        "vn": "Góc kết nối Số phận (30/29 | 34/20)",
+        "subId": "ID_18.061"
+      },
+      "Juxtaposition Cross of Fantasy (41/31 | 44/24)": {
+        "vn": "Góc kết nối Tưởng tượng (41/31 | 44/24)",
+        "subId": "ID_18.062"
+      },
+      "Juxtaposition Cross of Extremes (15/10 | 17/18)": {
+        "vn": "Góc kết nối Cực đoan (15/10 | 17/18)",
+        "subId": "ID_18.063"
+      },
+      "Juxtaposition Cross of Experimentation (16/9 | 63/64)": {
+        "vn": "Góc kết nối Thử nghiệm (16/9 | 63/64)",
+        "subId": "ID_18.064"
+      },
+      "Juxtaposition Cross of Experience (35/5 | 22/47)": {
+        "vn": "Góc kết nối Trải nghiệm (35/5 | 22/47)",
+        "subId": "ID_18.065"
+      },
+      "Juxtaposition Cross of Empowering (14/8 | 59/55)": {
+        "vn": "Góc kết nối Trao quyền (14/8 | 59/55)",
+        "subId": "ID_18.066"
+      },
+      "Juxtaposition Cross of The Driver (2/1 | 49/4)": {
+        "vn": "Góc kết nối Người dẫn (2/1 | 49/4)",
+        "subId": "ID_18.067"
+      },
+      "Juxtaposition Cross of Doubts (63/64 | 26/45)": {
+        "vn": "Góc kết nối Nghi ngờ (63/64 | 26/45)",
+        "subId": "ID_18.068"
+      },
+      "Juxtaposition Cross of Formulization (4/49 | 8/14)": {
+        "vn": "Góc kết nối Công thức (4/49 | 8/14)",
+        "subId": "ID_18.069"
+      },
+      "Juxtaposition Cross of Focus (9/16 | 64/63)": {
+        "vn": "Góc kết nối Tập trung (9/16 | 64/63)",
+        "subId": "ID_18.070"
+      },
+      "Juxtaposition Cross of Interaction (7/13 | 23/43)": {
+        "vn": "Góc kết nối Tương tác (7/13 | 23/43)",
+        "subId": "ID_18.071"
+      },
+      "Juxtaposition Cross of Intuition (57/51 | 62/61)": {
+        "vn": "Góc kết nối Trực giác (57/51 | 62/61)",
+        "subId": "ID_18.072"
+      },
+      "Juxtaposition Cross of Innocence (25/46 | 58/52)": {
+        "vn": "Góc kết nối Vô tội (25/46 | 58/52)",
+        "subId": "ID_18.073"
+      },
+      "Juxtaposition Cross of Insight (43/23 | 29/30)": {
+        "vn": "Góc kết nối Thấu hiểu (43/23 | 29/30)",
+        "subId": "ID_18.074"
+      },
+      "Juxtaposition Cross of Ideas (11/12 | 46/25)": {
+        "vn": "Góc kết nối Ý tưởng (11/12 | 46/25)",
+        "subId": "ID_18.075"
+      },
+      "Juxtaposition Cross of Influence (31/41 | 24/44)": {
+        "vn": "Góc kết nối Ảnh hưởng (31/41 | 24/44)",
+        "subId": "ID_18.076"
+      },
+      "Juxtaposition Cross of Grace (22/47 | 11/12)": {
+        "vn": "Góc kết nối Duyên dáng (22/47 | 11/12)",
+        "subId": "ID_18.077"
+      },
+      "Juxtaposition Cross of Habits (5/35 | 47/22)": {
+        "vn": "Góc kết nối Thói quen (5/35 | 47/22)",
+        "subId": "ID_18.078"
+      },
+      "Juxtaposition Cross of Limitation (60/56 | 28/27)": {
+        "vn": "Góc kết nối Giới hạn (60/56 | 28/27)",
+        "subId": "ID_18.079"
+      },
+      "Juxtaposition Cross of Listening (13/7 | 43/23)": {
+        "vn": "Góc kết nối Lắng nghe (13/7 | 43/23)",
+        "subId": "ID_18.080"
+      },
+      "Left Angle Cross of Endeavor (48/21 | 53/54)": {
+        "vn": "Góc trái Nỗ lực (48/21 | 53/54)",
+        "subId": "ID_18.081"
+      },
+      "Left Angle Cross of Endeavor (21/48 | 54/53)": {
+        "vn": "Góc trái Nỗ lực (21/48 | 54/53)",
+        "subId": "ID_18.082"
+      },
+      "Left Angle Cross of Duality (34/20 | 40/37)": {
+        "vn": "Góc trái Song hành (34/20 | 40/37)",
+        "subId": "ID_18.083"
+      },
+      "Left Angle Cross of Duality (20/34 | 37/40)": {
+        "vn": "Góc trái Song hành (20/34 | 37/40)",
+        "subId": "ID_18.084"
+      },
+      "Left Angle Cross of Education (11/12 | 46/25)": {
+        "vn": "Góc trái Giáo dục (11/12 | 46/25)",
+        "subId": "ID_18.085"
+      },
+      "Left Angle Cross of Education (12/11 | 25/46)": {
+        "vn": "Góc trái Giáo dục (12/11 | 25/46)",
+        "subId": "ID_18.086"
+      },
+      "Left Angle Cross of Distraction (60/56 | 28/27)": {
+        "vn": "Góc trái Phân tâm (60/56 | 28/27)",
+        "subId": "ID_18.087"
+      },
+      "Left Angle Cross of Distraction (56/60 | 27/28)": {
+        "vn": "Góc trái Phân tâm (56/60 | 27/28)",
+        "subId": "ID_18.088"
+      },
+      "Left Angle Cross of Dominion (64/63 | 45/26)": {
+        "vn": "Góc trái Thống trị (64/63 | 45/26)",
+        "subId": "ID_18.089"
+      },
+      "Left Angle Cross of Dominion (63/64 | 26/45)": {
+        "vn": "Góc trái Thống trị (63/64 | 26/45)",
+        "subId": "ID_18.090"
+      },
+      "Left Angle Cross of Industry (30/29 | 34/20)": {
+        "vn": "Góc trái Công nghiệp (30/29 | 34/20)",
+        "subId": "ID_18.091"
+      },
+      "Left Angle Cross of Industry (29/30 | 20/34)": {
+        "vn": "Góc trái Công nghiệp (29/30 | 20/34)",
+        "subId": "ID_18.092"
+      },
+      "Left Angle Cross of Incarnation (24/44 | 13/7)": {
+        "vn": "Góc trái Hóa thân (24/44 | 13/7)",
+        "subId": "ID_18.093"
+      },
+      "Left Angle Cross of Incarnation (44/24 | 7/13)": {
+        "vn": "Góc trái Hóa thân (44/24 | 7/13)",
+        "subId": "ID_18.094"
+      },
+      "Left Angle Cross of Individualism (39/38 | 51/57)": {
+        "vn": "Góc trái Cá tính (39/38 | 51/57)",
+        "subId": "ID_18.095"
+      },
+      "Left Angle Cross of Individualism (38/39 | 57/51)": {
+        "vn": "Góc trái Cá tính (38/39 | 57/51)",
+        "subId": "ID_18.096"
+      },
+      "Left Angle Cross of Healing (25/46 | 58/52)": {
+        "vn": "Góc trái Chữa lành (25/46 | 58/52)",
+        "subId": "ID_18.097"
+      },
+      "Left Angle Cross of Healing (46/25 | 52/58)": {
+        "vn": "Góc trái Chữa lành (46/25 | 52/58)",
+        "subId": "ID_18.098"
+      },
+      "Left Angle Cross of Identification (16/9 | 63/64)": {
+        "vn": "Góc trái Nhận diện (16/9 | 63/64)",
+        "subId": "ID_18.099"
+      },
+      "Left Angle Cross of Identification (9/16 | 64/63)": {
+        "vn": "Góc trái Nhận diện (9/16 | 64/63)",
+        "subId": "ID_18.100"
+      },
+      "Right Angle Cross of Explanation (49/4 | 43/23)": {
+        "vn": "Góc phải Giải thích (49/4 | 43/23)",
+        "subId": "ID_18.101"
+      },
+      "Right Angle Cross of Explanation (23/43 | 49/4)": {
+        "vn": "Góc phải Giải thích (23/43 | 49/4)",
+        "subId": "ID_18.102"
+      },
+      "Right Angle Cross of Explanation (4/49 | 23/43)": {
+        "vn": "Góc phải Giải thích (4/49 | 23/43)",
+        "subId": "ID_18.103"
+      },
+      "Right Angle Cross of Explanation (43/23 | 4/49)": {
+        "vn": "Góc phải Giải thích (43/23 | 4/49)",
+        "subId": "ID_18.104"
+      },
+      "Right Angle Cross of The Four Ways (24/44 | 19/33)": {
+        "vn": "Góc phải Bốn hướng (24/44 | 19/33)",
+        "subId": "ID_18.105"
+      },
+      "Right Angle Cross of The Four Ways (33/19 | 24/44)": {
+        "vn": "Góc phải Bốn hướng (33/19 | 24/44)",
+        "subId": "ID_18.106"
+      },
+      "Right Angle Cross of The Four Ways (44/24 | 33/19)": {
+        "vn": "Góc phải Bốn hướng (44/24 | 33/19)",
+        "subId": "ID_18.107"
+      },
+      "Right Angle Cross of The Four Ways (19/33 | 44/24)": {
+        "vn": "Góc phải Bốn hướng (19/33 | 44/24)",
+        "subId": "ID_18.108"
+      },
+      "Right Angle Cross of Laws (3/50 | 60/56)": {
+        "vn": "Góc phải Luật lệ (3/50 | 60/56)",
+        "subId": "ID_18.109"
+      },
+      "Right Angle Cross of Laws (56/60 | 3/50)": {
+        "vn": "Góc phải Luật lệ (56/60 | 3/50)",
+        "subId": "ID_18.110"
+      },
+      "Right Angle Cross of Planning (40/37 | 16/9)": {
+        "vn": "Góc phải Kế hoạch (40/37 | 16/9)",
+        "subId": "ID_18.111"
+      },
+      "Right Angle Cross of Planning (9/16 | 40/37)": {
+        "vn": "Góc phải Kế hoạch (9/16 | 40/37)",
+        "subId": "ID_18.112"
+      },
+      "Right Angle Cross of Planning (37/40 | 9/16)": {
+        "vn": "Góc phải Kế hoạch (37/40 | 9/16)",
+        "subId": "ID_18.113"
+      },
+      "Right Angle Cross of Planning (16/9 | 37/40)": {
+        "vn": "Góc phải Kế hoạch (16/9 | 37/40)",
+        "subId": "ID_18.114"
+      },
+      "Right Angle Cross of Rulership (47/22 | 45/26)": {
+        "vn": "Góc phải Cai trị (47/22 | 45/26)",
+        "subId": "ID_18.115"
+      },
+      "Right Angle Cross of Rulership (26/45 | 47/22)": {
+        "vn": "Góc phải Cai trị (26/45 | 47/22)",
+        "subId": "ID_18.116"
+      },
+      "Right Angle Cross of Rulership (22/47 | 26/45)": {
+        "vn": "Góc phải Cai trị (22/47 | 26/45)",
+        "subId": "ID_18.117"
+      },
+      "Right Angle Cross of Rulership (45/26 | 22/47)": {
+        "vn": "Góc phải Cai trị (45/26 | 22/47)",
+        "subId": "ID_18.118"
+      },
+      "Right Angle Cross of Service (17/18 | 58/52)": {
+        "vn": "Góc phải Phục vụ (17/18 | 58/52)",
+        "subId": "ID_18.119"
+      },
+      "Right Angle Cross of Service (52/58 | 17/18)": {
+        "vn": "Góc phải Phục vụ (52/58 | 17/18)",
+        "subId": "ID_18.120"
+      },
+      "Right Angle Cross of Laws (60/56 | 50/3)": {
+        "vn": "Góc phải Luật lệ (60/56 | 50/3)",
+        "subId": "ID_18.121"
+      },
+      "Right Angle Cross of Laws (50/3 | 56/60)": {
+        "vn": "Góc phải Luật lệ (50/3 | 56/60)",
+        "subId": "ID_18.122"
+      },
+      "Right Angle Cross of Maya (62/61 | 42/32)": {
+        "vn": "Góc phải Ảo ảnh (62/61 | 42/32)",
+        "subId": "ID_18.123"
+      },
+      "Right Angle Cross of Maya (42/32 | 61/62)": {
+        "vn": "Góc phải Ảo ảnh (42/32 | 61/62)",
+        "subId": "ID_18.124"
+      },
+      "Right Angle Cross of Maya (61/62 | 32/42)": {
+        "vn": "Góc phải Ảo ảnh (61/62 | 32/42)",
+        "subId": "ID_18.125"
+      },
+      "Right Angle Cross of Maya (32/42 | 62/61)": {
+        "vn": "Góc phải Ảo ảnh (32/42 | 62/61)",
+        "subId": "ID_18.126"
+      },
+      "Right Angle Cross of Penetration (53/54 | 51/57)": {
+        "vn": "Góc phải Thâm nhập (53/54 | 51/57)",
+        "subId": "ID_18.127"
+      },
+      "Right Angle Cross of Penetration (51/57 | 54/53)": {
+        "vn": "Góc phải Thâm nhập (51/57 | 54/53)",
+        "subId": "ID_18.128"
+      },
+      "Right Angle Cross of Penetration (54/53 | 57/51)": {
+        "vn": "Góc phải Thâm nhập (54/53 | 57/51)",
+        "subId": "ID_18.129"
+      },
+      "Right Angle Cross of Penetration (57/51 | 53/54)": {
+        "vn": "Góc phải Thâm nhập (57/51 | 53/54)",
+        "subId": "ID_18.130"
+      },
+      "Left Angle Cross of Masks (13/7 | 43/23)": {
+        "vn": "Góc trái Mặt nạ (13/7 | 43/23)",
+        "subId": "ID_18.131"
+      },
+      "Left Angle Cross of Masks (7/13 | 23/43)": {
+        "vn": "Góc trái Mặt nạ (7/13 | 23/43)",
+        "subId": "ID_18.132"
+      },
+      "Left Angle Cross of Migration (37/40 | 5/35)": {
+        "vn": "Góc trái Di cư (37/40 | 5/35)",
+        "subId": "ID_18.133"
+      },
+      "Left Angle Cross of Migration (40/37 | 35/5)": {
+        "vn": "Góc trái Di cư (40/37 | 35/5)",
+        "subId": "ID_18.134"
+      },
+      "Left Angle Cross of Informing (22/47 | 11/12)": {
+        "vn": "Góc trái Thông tin (22/47 | 11/12)",
+        "subId": "ID_18.135"
+      },
+      "Left Angle Cross of Informing (47/22 | 12/11)": {
+        "vn": "Góc trái Thông tin (47/22 | 12/11)",
+        "subId": "ID_18.136"
+      },
+      "Left Angle Cross of Limitation (42/32 | 60/56)": {
+        "vn": "Góc trái Giới hạn (42/32 | 60/56)",
+        "subId": "ID_18.137"
+      },
+      "Left Angle Cross of Limitation (32/42 | 56/60)": {
+        "vn": "Góc trái Giới hạn (32/42 | 56/60)",
+        "subId": "ID_18.138"
+      },
+      "Left Angle Cross of Obscuration (62/61 | 3/50)": {
+        "vn": "Góc trái Che khuất (62/61 | 3/50)",
+        "subId": "ID_18.139"
+      },
+      "Left Angle Cross of Obscuration (61/62 | 50/3)": {
+        "vn": "Góc trái Che khuất (61/62 | 50/3)",
+        "subId": "ID_18.140"
+      },
+      "Right Angle Cross of The Sleeping Phoenix (20/34 | 55/59)": {
+        "vn": "Góc phải Phượng hoàng ngủ (20/34 | 55/59)",
+        "subId": "ID_18.141"
+      },
+      "Right Angle Cross of The Sleeping Phoenix (55/59 | 34/20)": {
+        "vn": "Góc phải Phượng hoàng ngủ (55/59 | 34/20)",
+        "subId": "ID_18.142"
+      },
+      "Right Angle Cross of Service (58/52 | 18/17)": {
+        "vn": "Góc phải Phục vụ (58/52 | 18/17)",
+        "subId": "ID_18.143"
+      },
+      "Right Angle Cross of Service (18/17 | 52/58)": {
+        "vn": "Góc phải Phục vụ (18/17 | 52/58)",
+        "subId": "ID_18.144"
+      },
+      "Right Angle Cross of The Sphinx (1/2 | 7/13)": {
+        "vn": "Góc phải Nhân sư (1/2 | 7/13)",
+        "subId": "ID_18.145"
+      },
+      "Right Angle Cross of The Sphinx (13/7 | 1/2)": {
+        "vn": "Góc phải Nhân sư (13/7 | 1/2)",
+        "subId": "ID_18.146"
+      },
+      "Right Angle Cross of The Sleeping Phoenix (34/20 | 59/55)": {
+        "vn": "Góc phải Phượng hoàng ngủ (34/20 | 59/55)",
+        "subId": "ID_18.147"
+      },
+      "Right Angle Cross of The Sleeping Phoenix (59/55 | 20/34)": {
+        "vn": "Góc phải Phượng hoàng ngủ (59/55 | 20/34)",
+        "subId": "ID_18.148"
+      },
+      "Right Angle Cross of The Sphinx (2/1 | 13/7)": {
+        "vn": "Góc phải Nhân sư (2/1 | 13/7)",
+        "subId": "ID_18.149"
+      },
+      "Right Angle Cross of The Sphinx (7/13 | 2/1)": {
+        "vn": "Góc phải Nhân sư (7/13 | 2/1)",
+        "subId": "ID_18.150"
+      },
+      "Left Angle Cross of Wishes (3/50 | 41/31)": {
+        "vn": "Góc trái Ước nguyện (3/50 | 41/31)",
+        "subId": "ID_18.151"
+      },
+      "Left Angle Cross of Wishes (50/3 | 31/41)": {
+        "vn": "Góc trái Ước nguyện (50/3 | 31/41)",
+        "subId": "ID_18.152"
+      },
+      "Left Angle Cross of Upheaval (17/18 | 38/39)": {
+        "vn": "Góc trái Biến động (17/18 | 38/39)",
+        "subId": "ID_18.153"
+      },
+      "Left Angle Cross of Upheaval (18/17 | 39/38)": {
+        "vn": "Góc trái Biến động (18/17 | 39/38)",
+        "subId": "ID_18.154"
+      },
+      "Left Angle Cross of Uncertainty (8/14 | 55/59)": {
+        "vn": "Góc trái Bất định (8/14 | 55/59)",
+        "subId": "ID_18.155"
+      },
+      "Left Angle Cross of Uncertainty (14/8 | 59/55)": {
+        "vn": "Góc trái Bất định (14/8 | 59/55)",
+        "subId": "ID_18.156"
+      },
+      "Left Angle Cross of Spirit (55/59 | 9/16)": {
+        "vn": "Góc trái Tinh thần (55/59 | 9/16)",
+        "subId": "ID_18.157"
+      },
+      "Left Angle Cross of Spirit (59/55 | 16/9)": {
+        "vn": "Góc trái Tinh thần (59/55 | 16/9)",
+        "subId": "ID_18.158"
+      },
+      "Right Angle Cross of Consciousness (63/64 | 5/35)": {
+        "vn": "Góc phải Nhận thức (63/64 | 5/35)",
+        "subId": "ID_18.159"
+      },
+      "Right Angle Cross of Consciousness (35/5 | 63/64)": {
+        "vn": "Góc phải Nhận thức (35/5 | 63/64)",
+        "subId": "ID_18.160"
+      },
+      "Left Angle Cross of Refinement (19/33 | 1/2)": {
+        "vn": "Góc trái Tinh lọc (19/33 | 1/2)",
+        "subId": "ID_18.161"
+      },
+      "Left Angle Cross of Refinement (33/19 | 2/1)": {
+        "vn": "Góc trái Tinh lọc (33/19 | 2/1)",
+        "subId": "ID_18.162"
+      },
+      "Left Angle Cross of Revolution (4/49 | 8/14)": {
+        "vn": "Góc trái Cách mạng (4/49 | 8/14)",
+        "subId": "ID_18.163"
+      },
+      "Left Angle Cross of Revolution (49/4 | 14/8)": {
+        "vn": "Góc trái Cách mạng (49/4 | 14/8)",
+        "subId": "ID_18.164"
+      },
+      "Left Angle Cross of The Plane (6/36 | 15/10)": {
+        "vn": "Góc trái Mặt phẳng (6/36 | 15/10)",
+        "subId": "ID_18.165"
+      },
+      "Left Angle Cross of The Plane (36/6 | 10/15)": {
+        "vn": "Góc trái Mặt phẳng (36/6 | 10/15)",
+        "subId": "ID_18.166"
+      },
+      "Left Angle Cross of Prevention (10/15 | 18/17)": {
+        "vn": "Góc trái Ngăn ngừa (10/15 | 18/17)",
+        "subId": "ID_18.167"
+      },
+      "Left Angle Cross of Prevention (15/10 | 17/18)": {
+        "vn": "Góc trái Ngăn ngừa (15/10 | 17/18)",
+        "subId": "ID_18.168"
+      },
+      "Left Angle Cross of Separation (5/35 | 47/22)": {
+        "vn": "Góc trái Phân tách (5/35 | 47/22)",
+        "subId": "ID_18.169"
+      },
+      "Left Angle Cross of Separation (35/5 | 22/47)": {
+        "vn": "Góc trái Phân tách (35/5 | 22/47)",
+        "subId": "ID_18.170"
+      },
+      "Right Angle Cross of Eden (12/11 | 36/6)": {
+        "vn": "Góc phải Địa đàng (12/11 | 36/6)",
+        "subId": "ID_18.171"
+      },
+      "Right Angle Cross of Eden (36/6 | 11/12)": {
+        "vn": "Góc phải Địa đàng (36/6 | 11/12)",
+        "subId": "ID_18.172"
+      },
+      "Right Angle Cross of Contagion (14/8 | 29/30)": {
+        "vn": "Góc phải Lan truyền (14/8 | 29/30)",
+        "subId": "ID_18.173"
+      },
+      "Right Angle Cross of Contagion (29/30 | 8/14)": {
+        "vn": "Góc phải Lan truyền (29/30 | 8/14)",
+        "subId": "ID_18.174"
+      },
+      "Right Angle Cross of Contagion (8/14 | 30/29)": {
+        "vn": "Góc phải Lan truyền (8/14 | 30/29)",
+        "subId": "ID_18.175"
+      },
+      "Right Angle Cross of Contagion (30/29 | 14/8)": {
+        "vn": "Góc phải Lan truyền (30/29 | 14/8)",
+        "subId": "ID_18.176"
+      },
+      "Right Angle Cross of Consciousness (5/35 | 64/63)": {
+        "vn": "Góc phải Nhận thức (5/35 | 64/63)",
+        "subId": "ID_18.177"
+      },
+      "Right Angle Cross of Consciousness (64/63 | 35/5)": {
+        "vn": "Góc phải Nhận thức (64/63 | 35/5)",
+        "subId": "ID_18.178"
+      },
+      "Right Angle Cross of Eden (11/12 | 6/36)": {
+        "vn": "Góc phải Địa đàng (11/12 | 6/36)",
+        "subId": "ID_18.179"
+      },
+      "Right Angle Cross of Eden (6/36 | 12/11)": {
+        "vn": "Góc phải Địa đàng (6/36 | 12/11)",
+        "subId": "ID_18.180"
+      },
+      "Right Angle Cross of The Vessel of Love (25/46 | 10/15)": {
+        "vn": "Góc phải Bình chứa tình yêu (25/46 | 10/15)",
+        "subId": "ID_18.181"
+      },
+      "Right Angle Cross of The Vessel of Love (15/10 | 25/46)": {
+        "vn": "Góc phải Bình chứa tình yêu (15/10 | 25/46)",
+        "subId": "ID_18.182"
+      },
+      "Right Angle Cross of The Unexpected (27/28 | 41/31)": {
+        "vn": "Góc phải Bất ngờ (27/28 | 41/31)",
+        "subId": "ID_18.183"
+      },
+      "Right Angle Cross of The Unexpected (31/41 | 27/28)": {
+        "vn": "Góc phải Bất ngờ (31/41 | 27/28)",
+        "subId": "ID_18.184"
+      },
+      "Right Angle Cross of The Unexpected (28/27 | 31/41)": {
+        "vn": "Góc phải Bất ngờ (28/27 | 31/41)",
+        "subId": "ID_18.185"
+      },
+      "Right Angle Cross of The Unexpected (41/31 | 28/27)": {
+        "vn": "Góc phải Bất ngờ (41/31 | 28/27)",
+        "subId": "ID_18.186"
+      },
+      "Right Angle Cross of Tension (21/48 | 38/39)": {
+        "vn": "Góc phải Căng thẳng (21/48 | 38/39)",
+        "subId": "ID_18.187"
+      },
+      "Right Angle Cross of Tension (39/38 | 21/48)": {
+        "vn": "Góc phải Căng thẳng (39/38 | 21/48)",
+        "subId": "ID_18.188"
+      },
+      "Right Angle Cross of Tension (48/21 | 39/38)": {
+        "vn": "Góc phải Căng thẳng (48/21 | 39/38)",
+        "subId": "ID_18.189"
+      },
+      "Right Angle Cross of Tension (38/39 | 48/21)": {
+        "vn": "Góc phải Căng thẳng (38/39 | 48/21)",
+        "subId": "ID_18.190"
+      },
+      "Right Angle Cross of The Vessel of Love (10/15 | 46/25)": {
+        "vn": "Góc phải Bình chứa tình yêu (10/15 | 46/25)",
+        "subId": "ID_18.191"
+      },
+      "Right Angle Cross of The Vessel of Love (46/25 | 15/10)": {
+        "vn": "Góc phải Bình chứa tình yêu (46/25 | 15/10)",
+        "subId": "ID_18.192"
+      }
+    }
+  },
+  "BusinessCompetencesAndQualities": {
+    "id": "ID_19",
+    "nameEN": "BusinessCompetencesAndQualities",
+    "nameVN": "Tố chất kinh doanh",
+    "values": {
+      "DEFAULT": {
+        "vn": "Nội dung luận giải chung",
+        "subId": "DEFAULT"
+      }
+    }
+  },
+  "DecisionMakingStrategy": {
+    "id": "ID_20",
+    "nameEN": "DecisionMakingStrategy",
+    "nameVN": "Cách ra quyết định",
+    "values": {
+      "Wait for others to come to you then wait for clarity": {
+        "vn": "Chờ lời mời - Cảm xúc rõ ràng",
+        "subId": "ID_20.001"
+      },
+      "Wait for others to come to you then listen to what you say in the moment": {
+        "vn": "Chờ lời mời - Nghe chính mình",
+        "subId": "ID_20.002"
+      },
+      "Respond and trust your gut": {
+        "vn": "Chờ phản hồi - Xem vùng bụng",
+        "subId": "ID_20.003"
+      },
+      "Wait for clarity then inform": {
+        "vn": "Chờ cảm xúc rõ ràng - Thông báo",
+        "subId": "ID_20.004"
+      },
+      "Respond then wait for clarity": {
+        "vn": "Phản hồi - Chờ cảm xúc rõ ràng",
+        "subId": "ID_20.005"
+      },
+      "Trust your instincts then inform": {
+        "vn": "Tin trực giác - Thông báo",
+        "subId": "ID_20.006"
+      },
+      "Reflect and discuss with trusted people to see what comes up": {
+        "vn": "Phản chiếu - Trò chuyện để nhận ra",
+        "subId": "ID_20.007"
+      },
+      "Wait for others to come to you then talk to 2-3 trusted people and listen to what you say": {
+        "vn": "Chờ lời mời - Trò chuyện để nghe mình",
+        "subId": "ID_20.008"
+      },
+      "Wait for others to come to you then trust your instincts": {
+        "vn": "Chờ lời mời - Tin trực giác",
+        "subId": "ID_20.009"
+      },
+      "Trust your will then inform": {
+        "vn": "Tin ý chí - Thông báo",
+        "subId": "ID_20.010"
+      },
+      "Wait for others to come to you then trust your will": {
+        "vn": "Chờ lời mời - Tin ý chí",
+        "subId": "ID_20.011"
+      }
+    }
+  }
+}

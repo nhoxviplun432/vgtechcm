@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Api;
 
+use App\Helpers\UploadHelper;
 use App\Http\Controllers\Controller;
 use App\Models\User;
 use Illuminate\Http\JsonResponse;
@@ -68,10 +69,69 @@ class AuthController extends Controller
     {
         $user = $request->user();
 
-        return response()->json([
-            'id'       => $user->id,
-            'fullname' => $user->fullname,
-            'email'    => $user->email,
+        return response()->json($this->userPayload($user));
+    }
+
+    public function updateProfile(Request $request): JsonResponse
+    {
+        $user = $request->user();
+
+        $data = $request->validate([
+            'fullname' => ['required', 'string', 'max:255'],
         ]);
+
+        $user->update(['fullname' => $data['fullname']]);
+
+        return response()->json($this->userPayload($user->fresh()));
+    }
+
+    public function updateAvatar(Request $request): JsonResponse
+    {
+        $user = $request->user();
+
+        $request->validate([
+            'avatar' => ['required', 'image', 'mimes:jpg,jpeg,png,webp', 'max:2048'],
+        ]);
+
+        if ($user->avatar) {
+            UploadHelper::delete($user->avatar);
+        }
+
+        $url = UploadHelper::store($request->file('avatar'));
+        $user->update(['avatar' => $url]);
+
+        return response()->json($this->userPayload($user->fresh()));
+    }
+
+    public function resetPassword(Request $request): JsonResponse
+    {
+        $user = $request->user();
+
+        $data = $request->validate([
+            'current_password'      => ['required', 'string'],
+            'password'              => ['required', 'string', 'min:8', 'confirmed'],
+        ]);
+
+        if (! Hash::check($data['current_password'], $user->password)) {
+            throw ValidationException::withMessages([
+                'current_password' => ['Mật khẩu hiện tại không đúng.'],
+            ]);
+        }
+
+        $user->update(['password' => Hash::make($data['password'])]);
+
+        return response()->json(['message' => 'Đổi mật khẩu thành công.']);
+    }
+
+    private function userPayload(User $user): array
+    {
+        return [
+            'id'         => $user->id,
+            'fullname'   => $user->fullname,
+            'email'      => $user->email,
+            'avatar_url' => $user->avatar
+                ? rtrim(config('app.url'), '/') . $user->avatar
+                : null,
+        ];
     }
 }

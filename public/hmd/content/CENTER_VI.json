@@ -1,0 +1,84 @@
+{
+  "Heart": {
+    "roleBoost": {
+      "Quản lý": 2
+    },
+    "addSkills": [
+      "Vốn",
+      "Uy tín"
+    ]
+  },
+  "Throat": {
+    "roleBoost": {
+      "Quan hệ công chúng": 2
+    },
+    "addSkills": [
+      "Truyền thông",
+      "Uy tín"
+    ]
+  },
+  "Sacral": {
+    "roleBoost": {
+      "Thực thi": 2,
+      "Năng lực": 1
+    },
+    "addSkills": [
+      "Quyết tâm"
+    ]
+  },
+  "G": {
+    "roleBoost": {
+      "Định hướng": 2,
+      "Văn hóa": 1
+    },
+    "addSkills": [
+      "Thấu hiểu",
+      "Tin cậy"
+    ]
+  },
+  "Splenic": {
+    "roleBoost": {
+      "Giám sát": 2
+    },
+    "addSkills": [
+      "Chi tiết",
+      "Uy tín"
+    ]
+  },
+  "Solar Plexus": {
+    "roleBoost": {
+      "Quan hệ công chúng": 1,
+      "Làm việc nhóm": 1
+    },
+    "addSkills": [
+      "Quan hệ khách hàng",
+      "Tin cậy"
+    ]
+  },
+  "Root": {
+    "roleBoost": {
+      "Thực thi": 1
+    },
+    "addSkills": [
+      "Quyết tâm"
+    ]
+  },
+  "Ajna": {
+    "roleBoost": {
+      "Kế toán": 1,
+      "Tổ chức": 1
+    },
+    "addSkills": [
+      "Nền tảng",
+      "Kiến thức"
+    ]
+  },
+  "Head": {
+    "roleBoost": {
+      "Định hướng": 1
+    },
+    "addSkills": [
+      "Kiến thức"
+    ]
+  }
+}

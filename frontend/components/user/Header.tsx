@@ -11,6 +11,7 @@ const NAV_LINKS = [
   { href: "/pricing",  label: "Gói" },
   { href: "/contact",  label: "Giới thiệu" },
   { href: "/affiliate",label: "Tiếp thị" },
+  { href: "/coaching",label: "Coaching" },
 ] as const;
 
 /* ------------------------------------------------------------------ */
@@ -65,6 +66,7 @@ function UserMenu({ user, onLogout }: { user: AuthUser; onLogout: () => void }) 
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
   const initial = user.fullname.trim().charAt(0).toUpperCase();
+  const avatarUrl = user.avatar_url ?? null;
 
   useEffect(() => {
     function handleOutside(e: MouseEvent) {
@@ -83,11 +85,14 @@ function UserMenu({ user, onLogout }: { user: AuthUser; onLogout: () => void }) 
         onClick={() => setOpen(v => !v)}
         className="hidden md:flex h-9 w-9 items-center justify-center rounded-full
                    bg-linear-to-br from-fuchsia-500 to-indigo-500
-                   text-sm font-bold text-white shadow
+                   text-sm font-bold text-white shadow overflow-hidden
                    ring-2 ring-transparent hover:ring-fuchsia-400/50 transition-all"
         aria-label="Tài khoản"
       >
-        {initial}
+        {avatarUrl ? (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img src={avatarUrl} alt={initial} style={{ width: 36, height: 36, objectFit: "cover" }} />
+        ) : initial}
       </button>
 
       {/* Dropdown */}
@@ -483,6 +488,15 @@ export default function Header() {
   // Check existing session on mount
   useEffect(() => {
     getMe().then(setUser);
+  }, []);
+
+  useEffect(() => {
+    function onAvatarUpdated(e: Event) {
+      const updated = (e as CustomEvent).detail;
+      setUser(updated);
+    }
+    window.addEventListener("user:avatarUpdated", onAvatarUpdated);
+    return () => window.removeEventListener("user:avatarUpdated", onAvatarUpdated);
   }, []);
 
   async function handleLogout() {

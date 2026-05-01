@@ -4,6 +4,7 @@ export interface AuthUser {
   id: number;
   fullname: string;
   email: string;
+  avatar_url?: string | null;
 }
 
 const TOKEN_KEY = "auth_token";
@@ -76,4 +77,45 @@ export async function logout(): Promise<void> {
 export async function getMe(): Promise<AuthUser | null> {
   if (!getToken()) return null;
   return apiFetch<AuthUser>("/auth/me").catch(() => null);
+}
+
+export async function updateProfile(fullname: string): Promise<AuthUser> {
+  return apiFetch<AuthUser>("/auth/profile", {
+    method: "PUT",
+    body: JSON.stringify({ fullname }),
+  });
+}
+
+export async function updateAvatar(file: File): Promise<AuthUser> {
+  const token = getToken();
+  const form = new FormData();
+  form.append("avatar", file);
+  const res = await fetch(`${API_BASE}/auth/avatar`, {
+    method: "POST",
+    headers: {
+      Accept: "application/json",
+      ...(token ? { Authorization: `Bearer ${token}` } : {}),
+    },
+    body: form,
+  });
+  if (!res.ok) {
+    const body = await res.json().catch(() => ({}));
+    const message =
+      body?.message ??
+      (body?.errors ? Object.values(body.errors).flat().join(" ") : null) ??
+      `HTTP ${res.status}`;
+    throw new Error(message);
+  }
+  return res.json() as Promise<AuthUser>;
+}
+
+export async function resetPassword(
+  current_password: string,
+  password: string,
+  password_confirmation: string
+): Promise<void> {
+  await apiFetch("/auth/reset-password", {
+    method: "PUT",
+    body: JSON.stringify({ current_password, password, password_confirmation }),
+  });
 }
